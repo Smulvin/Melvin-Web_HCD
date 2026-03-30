@@ -1,11 +1,15 @@
-// 1️⃣ Grab the paragraph
+// Prompts: 
+// Write me a a script that makes each word in the p a span and wrap those around the sticky distorter element
+// Almost worked. I can see that words are moving according to that circle, but the different spans are moving into each other and the actual width of the circle isnt properly calculated I think
+
+// Grab the paragraph
 const p = document.getElementById("text");
 
-// 2️⃣ Save original text for screen readers
+// Save original text for screen readers
 const originalText = p.textContent.trim();
 p.setAttribute("aria-label", originalText); // screen readers will read this
 
-// 3️⃣ Wrap each word in a span (for visual layout) and hide from screen readers
+// Wrap each word in a span (for visual layout) and hide from screen readers
 const words = originalText.split(/\s+/);
 p.textContent = "";
 
@@ -16,13 +20,13 @@ words.forEach(word => {
   p.appendChild(span);
 });
 
-// 4️⃣ Grab distorter and inputs
+// Grab distorter and inputs
 const distorter = document.getElementById("distorter");
 const sizeInput = document.getElementById("distortion-size");
 const xInput = document.getElementById("distortion-x");
 const yInput = document.getElementById("distortion-y");
 
-// 5️⃣ Load saved slider values from localStorage if available
+// Load saved slider values from localStorage if available
 const savedValues = JSON.parse(localStorage.getItem("distorterValues")) || {};
 sizeInput.value = savedValues.size ?? 60; // default 60 if nothing saved
 xInput.value = savedValues.x ?? 50;
@@ -31,7 +35,7 @@ yInput.value = savedValues.y ?? 50;
 // Log the loaded values
 console.log("Loaded slider values:", { size: sizeInput.value, x: xInput.value, y: yInput.value });
 
-// 6️⃣ Update distorter position and size
+// Update distorter position and size
 function updateDistorter() {
   const viewportWidth = window.innerWidth;
   const viewportHeight = window.innerHeight;
@@ -58,7 +62,7 @@ function updateDistorter() {
   console.log("Saved slider values:", currentValues);
 }
 
-// 7️⃣ Circle-wrapping logic
+//  Circle-wrapping logic
 function wrapWords() {
   const rect = distorter.getBoundingClientRect();
   const radius = rect.width / 2;
@@ -87,7 +91,7 @@ function wrapWords() {
   });
 }
 
-// 8️⃣ Event listeners
+// Event listeners
 sizeInput.addEventListener("input", updateDistorter);
 xInput.addEventListener("input", updateDistorter);
 yInput.addEventListener("input", updateDistorter);
@@ -98,5 +102,5 @@ window.addEventListener("resize", () => {
   wrapWords();
 });
 
-// 9️⃣ Initial setup
+// Initial setup
 updateDistorter();

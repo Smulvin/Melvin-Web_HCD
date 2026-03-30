@@ -32,6 +32,7 @@ body {
   transform: translate(-50%, -50%);
   pointer-events: none;
   background-color: rgba(255, 0, 0, 0.2);
+  
 }
 
 form {
