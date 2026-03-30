@@ -26,6 +26,8 @@ Aslertest
 
 Ik had 2 verschillende ideeën voor deze opdracht. Verder in de readme staan mijn eerste ideeën kort uitgewerkt in mijn notitieboekje. Vandaag ben ik bezig geweest met het uitwerken van het eerste idee. Deze had ik namelijk ook aan Vasilis voorgesteld en die vond hem mooi absurd om te testen. Het idee was om een object te hebben die fixed op de webpagina staat die je kan verplaatsen en vergroten. Maar die div zelf moet niet gelezen of gezien worden door een screenreader. Ik probeer het eerst met door de div een float te geven zodat de tekst eromheen vormt. Dit lukte helaas niet, want float kon alleen aan het begin of aan het eind, niet in het midden. Na wat moeite had ik het aan AI gevraagd. Die wilde het eerst ook alleen met float proberen, later had ik aangemoedigd om het met JavaScript op te lossen, na nog wat gedoe lukte het eindelijk om de tekst eromheen te laten formateren. Daarna was het alleen nog een beetje spelen zodat het er goed uitzag en dat de slider er invloed op hadden. Ook moest ik nog even kijken naar hoe het beter zou maken voor een screenreader. Want nu werd van elk woord een span gemaakt, maar ik wil niet dat ze los worden voorgelezen. Ik sla dus eerst de originele tekst op gebruik die voor een aria-label op de p, en doe aria-hidden op alle span elementen. Als laatste vandaag heb ik nog toegevoegd dat de localhost de waardes van de sliders opslaat zodat die daarna weer gebruikt kunnen worden als standaard, dan hoef je hem niet opnieuw in te stellen. Dit gaat handig zijn tijdens de test van morgen want kan ik ook goed zien welke delen van het scherm Roger wel nog redelijk kan zien en welke niet. Daar kan ik dan meer focus op leggen. Voor de rest heb ik nog mijn Lorem Ipsum vervanging door een tekstje over Plato, die link staat hieronder.
 
+<img src="Assets/README_imgs/Dag1_Voortgang.png" alt="Voortgang van de eerste dag, text transformeert om tekst heen">
+
 #### Hulp van AI
 Prompts: 
 * Write me a a script that makes each word in the p a span and wrap those around the sticky distorter element
@@ -130,3 +132,6 @@ In summary the inclusive design principles assume we have expert knowledge of de
 
 #### Bronnen
 https://classics.mit.edu/Plato/republic.1.introduction.html
+
+#### Checkout met Jeppe
+Jeppe had al meer gedaan met annotaties. Hij had een systeem waarbij je per woord een annotatie kan toevoegen en een tag kan meegeven. Dit was een handig systeem om later ze terug te kunnen vinden. Maar zelf leek het me een beetje onhandig omdat je al die tags moet onthouden. Zelf had ik een ander idee, een knop waarbij je bij al je annotaties komt en ze vandaar kan bekijken. Maar het is niet een slecht idee om een manier te hebben om je annotaties te sorteren.
