@@ -130,8 +130,9 @@ Doesnt make any sense to not add extra features to improve experience. Before we
 
 In summary the inclusive design principles assume we have expert knowledge of designing for excluded people. They also assume the patterns we nowadays use are well tested and good to use. Adding nonsense to a website could include something that could actually work. You cant focus fully on the content. But it could bring insights in the people that you make it for.
 
+#### Checkout met Jeppe
+Jeppe had al meer gedaan met annotaties. Hij had een systeem waarbij je per woord een annotatie kan toevoegen en een tag kan meegeven. Dit was een handig systeem om later ze terug te kunnen vinden. Maar zelf leek het me een beetje onhandig omdat je al die tags moet onthouden. Zelf had ik een ander idee, een knop waarbij je bij al je annotaties komt en ze vandaar kan bekijken. Maar het is niet een slecht idee om een manier te hebben om je annotaties te sorteren.
+
 #### Bronnen
 https://classics.mit.edu/Plato/republic.1.introduction.html
 
-#### Checkout met Jeppe
-Jeppe had al meer gedaan met annotaties. Hij had een systeem waarbij je per woord een annotatie kan toevoegen en een tag kan meegeven. Dit was een handig systeem om later ze terug te kunnen vinden. Maar zelf leek het me een beetje onhandig omdat je al die tags moet onthouden. Zelf had ik een ander idee, een knop waarbij je bij al je annotaties komt en ze vandaar kan bekijken. Maar het is niet een slecht idee om een manier te hebben om je annotaties te sorteren.
