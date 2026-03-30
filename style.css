@@ -11,39 +11,38 @@ body {
 
 #text {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 50px auto;
   line-height: 1.6;
   font-size: 1.2rem;
+  position: relative;
 }
 
 #text span {
   display: inline-block;
-  margin-right: 4px;
+  white-space: pre-wrap;
 }
 
-/* Invisible placeholder that text wraps around */
-#distorter-placeholder {
-  float: left;
-  width: 150px;
-  height: 150px;
-  margin: 0 20px 20px 20px;
-  shape-outside: circle(50%);
-  clip-path: circle(50%);
-  visibility: hidden; /* invisible but still wraps text */
-}
-
-/* Visual distorter that stays fixed in center */
-#distorter-visual {
+#distorter {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   width: 150px;
   height: 150px;
-  background-color: rgba(255, 0, 0, 0.5);
   border-radius: 50%;
+  transform: translate(-50%, -50%);
   pointer-events: none;
-  z-index: 10;
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+form {
+  position: fixed;
+  top: 10px;
+  right: 0%;
+  background: red;
+  border-radius: 10px;
+  color: white;
+  padding: 1em;
+  z-index: 1000;
 }
 
 label {
