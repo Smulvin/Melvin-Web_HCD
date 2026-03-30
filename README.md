@@ -5,7 +5,7 @@ Doelgroep: Roger
 ## Week 1
 
 ### Dag 1: Maandag 30 - 3 - 2026
-Vandaag was de eerste dag dat we aan deze opdracht gingen beginnen. Ik heb roger aangewezen gekregen. Een man die masculadegeneratie heeft. Dit is een aandoening waarbij zijn zicht steeds minder goed wordt omdat er een zwarte vlek bevindt die bij hem steeds groter wordt waardoor hij steeds minder ziet. Om deze opdracht te beginnen heb ik eerst wat aantekeningen gemaakt. De foto daarvan staat hieronder, maar heb ze ook even netjes hier uitgewerkt in de readme.
+Vandaag was de eerste dag dat we aan deze opdracht gingen beginnen. Ik heb roger aangewezen gekregen. Een man die masculadegeneratie heeft. Dit is een aandoening waarbij zijn zicht steeds minder goed wordt omdat er een zwarte vlek bevindt die bij hem steeds groter wordt waardoor hij steeds minder ziet. Om deze opdracht te beginnen heb ik eerst wat aantekeningen gemaakt. De foto daarvan staat hieronder, maar heb ze ook even netjes hier uitgewerkt in de readme.   
 Roger
 * Maculadegeneratie
 * Gebruikt screenreader
