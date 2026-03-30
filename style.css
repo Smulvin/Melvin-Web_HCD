@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+#text {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-size: 1.2rem;
+}
+
+#text span {
+  display: inline-block;
+  margin-right: 4px;
+}
+
+/* Invisible placeholder that text wraps around */
+#distorter-placeholder {
+  float: left;
+  width: 150px;
+  height: 150px;
+  margin: 0 20px 20px 20px;
+  shape-outside: circle(50%);
+  clip-path: circle(50%);
+  visibility: hidden; /* invisible but still wraps text */
+}
+
+/* Visual distorter that stays fixed in center */
+#distorter-visual {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+  background-color: rgba(255, 0, 0, 0.5);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 10;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+
+    input {
+        width: 200px;
+    }
+}
