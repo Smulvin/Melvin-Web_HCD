@@ -139,7 +139,7 @@ https://classics.mit.edu/Plato/republic.1.introduction.html
 ### Dag 2: Dinsdag 31 - 3 - 2026
 Vandaag was ik begonnen met het maken van het annotatie menu. Dit probeerde ik eerst met AI te doen, maar merkte al snel dat het niet de juiste kant op ging en ik tegen veel dingen aanliep. Ik ga het dus een andere keer proberen zelf te maken. Ik had namelijk veel moeite met het echt opslaan van de annotaties in de localhost en ze dan weer laten zien in een annotatie menu. Het leek me een stuk handiger om dit een andere keer stap voor stap te gaan doen. Voor nu leek het me beter als ik me meer zou focussen op de test van vanmiddag. Dus ben ik verder gegaan met het bedenken van vragen die ik wil stellen tijdens de test zodat ik daarna een beter beeld heb van Roger en dat ik beter weet waar ik focus op moet leggen. Met mijn huidige design met de distortion is het ook lastig om delen specieke delen te selecteren. Want voor dat effect van waar de vlek zit, wordt elk woord een eigen span. Voor de accessibility moest ik de originele tekst pakken en die in een aria-label zetten en dat elke span aria hidden is. Maar dat maakt het voor een screen reader wel lastig om dan specifieke delen te selecteren om daar uiteindelijk annotaties van te maken. Het leek me wel handig om veel te doen met felle kleuren, want uit aannames en onderzoek online stond er dat je vooral dingen wazig zien en dat je geen focus punt echt hebt als je maculadegeneratie hebt. Dus met felle kleuren is het dan makkelijker om iets aan te geven dan met een kadertje. 
 
-<img src="Assets/README_imgs/Dag2_FelleAnnotatie.png">
+<img src="Assets/README_imgs/Dag2_FelleAnnotatie.png" alt="Ëen annotatie kadertje in een felle kleur groen">
 
 #### Vragen voor eerste test Roger
 - Wat is je ervaring met screenreaders?
@@ -149,6 +149,59 @@ Vandaag was ik begonnen met het maken van het annotatie menu. Dit probeerde ik e
 - Kan je uitleggen wat je precies wel en niet ziet?
 - Zou je het fijner vinden werken met kaders voor container of juiste hele felle kleuren?
 - Wat voor interesses heb je?
-- Wat voor websites bezoek je vaak?
 - Tegen wat voor dingen loop je tegenaan op die websites?
 - Bezoek je websites vaker op je telefoon of op een desktop?
+
+#### Aantekningen Test met Roger Rafelli
+59 jaar oud, 43 toen eerste symptomen kreeg
+Werktuigbouwkunde achtergrond
+erfelike versie van macula degeneratie, niet geneesbaar
+andere vorm van leven gekregen, kan niet meer werken of auto rijden
+sommige dingen zijn nog niet beschikbaar voor slechtziende
+"Kerk silhouette zie je, maar de klok kan je niet zien"
+Ziet wel nog steeds gewoon goed alle kleuren, vroeg of laat worden ze wel aangetast. Contrast is heel belangrijk, maar ook lichtgevoeligheid
+Continu aan het aanpassen, altijd aan het leren
+Blinde geleide hond, gaat ook met pensioen na zoveel tijd (5 jaar)
+Er zijn wel hulpmiddelen, en de meeste helpen ook wel veel. Maar niet alles is er nog. Wordt wel elk jaar beter.
+Stichting Fidelio in Eindhoven
+
+Gestopt als werktuigbouwkundige, is toch boeken gaan "lezen". Maar viel vaak in slaap. Luisterboeken hielp ook niet. Dus ging hij filosofie studeren zodat hij boeken ging lezen en annotaties kon maken om actief te gaan lezen.
+Wilt aantekeningen kunnen maken van waar het staat. Wilt een makkelijke manier om notities terug te vinden. 
+Hij heeft wel een notitieboekje, maar kan niet meer zijn eigen handschrift lezen
+Tooltje waar hij een tekst in kan vullen zodat hij makkelijk aantekeningen kan maken
+Kan geen volledige zinnen meer lezen, je moet het voorstellen alsof je altijd een vuist voor je gezicht heeft.
+Heeft wel skills geleerd om het nog een beetje te kunnen, maar is nog steeds lastig.
+Dingen met kleur signaleren is mogelijk.
+Fan van dark mode, dus we willen niet een volledig witte website hebben
+Kan dus niet echt meer zijn eigen handschrift, maar door het op te schrijven helpt het wel met onthouden.
+Met Word heb je ook wel bepaalde knopjes om aantekeningen te maken, maar het is vooral altijd lastig om ze dan terug te vinden
+Auditief heeft wel voorkeur, dat het wordt voorgelezen. 
+Voorkeur voor typen
+Wat heel irritant is als mensen zeggen dat het toegankelijk is, maar het niet helemaal niet is. Dat soms het wel aan de WCAG voldoet, maar nog steeds niet goed werkt voor een slechtziende
+Met 1 oplossing kan je niet de hele doelgroep bereiken, wordt soms een beetje misbruikt. (Bijvoorbeeld Braille)
+Lieveer een soort Word bestand waar hij aantekeningen in kan maken, ipv een website waar hij aantekeningen kan maken
+Lastig om sommige boeken te kunnen lezen, want niet alles heeft een braille of digitale versie.
+Leest boeken op desktop en mobiel, maar maakt de aantekeningen altijd vanaf desktop. Want daar gaat het iets makkelijker.
+Er is wel behoefte om het op mobiel te kunnen, maar er is nog geen makkelijke tool voor. Lastig om notities terug te vinden
+NVDA en Supernova als screenreader gebruikt hij
+Aantekeningen koppelen aan een specifiek soort boek. (Dus het is wel handig als de aantekeningen gesorteerd zijn)
+Zit een beetje in een tussengebied, hij kan nog wel dingen zien, maar heeft wel een screenreader nodig omdat het ook snel vermoeid.
+Sorteert atm notities per bladzijdes, maar is wel handig om een sub categorie te hebben daarvoor ipv alleen per boek.
+
+Proof of concepts 
+Niet duidelijk waar je bent, wat actief is
+Moeten kunnen navigeren binnen een tekst. 
+Handig dat teksten soort van gemarkeerd worden van waar je bent in de tekst
+Wilt wel nog steeds een beetje mee kunnen lezen, zonder dat het vermoeiend wordt
+Handig dat het per zin gaat.
+Annotaties met meestal meer dan 1 regel
+Verschillende programma's hebben verschillende sneltoetsen
+Je weet misschien wel dat het de tweede opmerking is, maar het is slecht soms terug te vinden
+Verschillende instellingen voor bijvoorbeeld lettergroottes kan handig zijn
+zwart geel is een fijn kleur contrast
+
+MIJN OPDRACHT
+Lastig om nog steeds zinnen te lezen
+Wordt snel vermoeiend
+Wel een echt leuk idee omdat wel echt goed het probleem weer geeft
+Markeren met achtergrond in verschillende kleuren zou waarschijnlijk niet verbeteren
