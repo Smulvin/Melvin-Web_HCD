@@ -1,23 +1,27 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
   font-family: sans-serif;
+  overflow-x: hidden;
 }
 
-#text {
+.text {
   max-width: 800px;
   margin: 50px auto;
   line-height: 1.6;
-  font-size: 1.2rem;
   position: relative;
+
+  p {
+    font-size: 1.2rem;
+  }
 }
 
-#text span {
+.text span {
   display: inline-block;
   white-space: pre-wrap;
 }
@@ -32,10 +36,9 @@ body {
   transform: translate(-50%, -50%);
   pointer-events: none;
   background-color: rgba(255, 0, 0, 0.2);
-  
 }
 
-form {
+form#distortion-menu {
   position: fixed;
   top: 10px;
   right: 0%;
@@ -46,11 +49,20 @@ form {
   z-index: 1000;
 }
 
-label {
-    display: flex;
-    flex-direction: column;
-
-    input {
-        width: 200px;
-    }
+form#anno-menu {
+  width: 25em;
+  background: lime;
+  border-radius: 10px;
+  padding: 1em;
+  /* display: none; */
 }
+
+label {
+  display: flex;
+  flex-direction: column;
+
+  input {
+    width: 200px;
+  }
+}
+

@@ -121,7 +121,7 @@ It is important to consider all contexts, but only if the design team understand
 * Be consistent -> Ignore conventions
 Inconsistency can confuse people. For some users there is no things as familiar conventions. Some patterns like navigation on top we take for granted, but dont work well for screenreader users. So you might want to ignore the basic conventions.
 
-* Prioritise content -> Prioritse identify
+* Prioritise content -> Prioritse identity
 There are certainly websites that could use more attentions when it comes to their content, but it is hard to imagine that negelect content as a design principle.
 Identity plays a big factor when it comes to good content. There are different types of identity. Identies are everywhere and are used all the time. But some identities are excluded when designing websites. What if we use those?
 
@@ -136,3 +136,20 @@ Jeppe had al meer gedaan met annotaties. Hij had een systeem waarbij je per woor
 #### Bronnen
 https://classics.mit.edu/Plato/republic.1.introduction.html
 
+### Dag 2: Dinsdag 31 - 3 - 2026
+Vandaag was ik begonnen met het maken van het annotatie menu. Dit probeerde ik eerst met AI te doen, maar merkte al snel dat het niet de juiste kant op ging en ik tegen veel dingen aanliep. Ik ga het dus een andere keer proberen zelf te maken. Ik had namelijk veel moeite met het echt opslaan van de annotaties in de localhost en ze dan weer laten zien in een annotatie menu. Het leek me een stuk handiger om dit een andere keer stap voor stap te gaan doen. Voor nu leek het me beter als ik me meer zou focussen op de test van vanmiddag. Dus ben ik verder gegaan met het bedenken van vragen die ik wil stellen tijdens de test zodat ik daarna een beter beeld heb van Roger en dat ik beter weet waar ik focus op moet leggen. Met mijn huidige design met de distortion is het ook lastig om delen specieke delen te selecteren. Want voor dat effect van waar de vlek zit, wordt elk woord een eigen span. Voor de accessibility moest ik de originele tekst pakken en die in een aria-label zetten en dat elke span aria hidden is. Maar dat maakt het voor een screen reader wel lastig om dan specifieke delen te selecteren om daar uiteindelijk annotaties van te maken. Het leek me wel handig om veel te doen met felle kleuren, want uit aannames en onderzoek online stond er dat je vooral dingen wazig zien en dat je geen focus punt echt hebt als je maculadegeneratie hebt. Dus met felle kleuren is het dan makkelijker om iets aan te geven dan met een kadertje. 
+
+<img src="Assets/README_imgs/Dag2_FelleAnnotatie.png">
+
+#### Vragen voor eerste test Roger
+- Wat is je ervaring met screenreaders?
+- Welke screenreader gebruik je?
+- Heb je specifiek dingen waar je altijd tegenaan loopt met screenreaders?
+- Hoe ervaar jij maculadegeneratie?
+- Kan je uitlegegen wat je precies wel en niet ziet?
+- Zou je het fijner vinden werken met felle kleuren of alleen met kaders?
+- Wat voor interesses heb je?
+- Wat voor websites bezoek je vaak?
+- Tegen wat voor dingen loop je tegeaan op die websites?
+- Bezoek je websites vaker op je telefoon of op een desktop?
+- 
