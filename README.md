@@ -146,10 +146,9 @@ Vandaag was ik begonnen met het maken van het annotatie menu. Dit probeerde ik e
 - Welke screenreader gebruik je?
 - Heb je specifiek dingen waar je altijd tegenaan loopt met screenreaders?
 - Hoe ervaar jij maculadegeneratie?
-- Kan je uitlegegen wat je precies wel en niet ziet?
-- Zou je het fijner vinden werken met felle kleuren of alleen met kaders?
+- Kan je uitleggen wat je precies wel en niet ziet?
+- Zou je het fijner vinden werken met kaders voor container of juiste hele felle kleuren?
 - Wat voor interesses heb je?
 - Wat voor websites bezoek je vaak?
-- Tegen wat voor dingen loop je tegeaan op die websites?
+- Tegen wat voor dingen loop je tegenaan op die websites?
 - Bezoek je websites vaker op je telefoon of op een desktop?
-- 
