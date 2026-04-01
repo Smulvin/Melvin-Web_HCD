@@ -207,4 +207,4 @@ Wel een echt leuk idee omdat wel echt goed het probleem weer geeft
 Markeren met achtergrond in verschillende kleuren zou waarschijnlijk niet verbeteren
 
 #### Checkout met Dylan
-Ik had de checkout online met Dylan gedaan. Dylan was vandaag vooral bezig met het beter maken voor screenreaders. Dat knoppen betere teksten uitspreken in plaats standaard dingen. De testpersoon vondt het goed hoe zijn knoppen stonden, maar hij kwam wel nog een fout tegen bij de knop die zegt waar je op het moment staat. Zelf ben ik een beetje bezig geweest met annotaties, maar kreeg het niet lekker werkend, dus had dat weer verwijderd zodat ik iets beter ook kon laten zien aan Roger.
+Ik had de checkout online met Dylan gedaan. Dylan was vandaag vooral bezig met het beter maken voor screenreaders. Dat knoppen betere teksten uitspreken in plaats standaard dingen. De testpersoon vondt het goed hoe zijn knoppen stonden, maar hij kwam wel nog een fout tegen bij de knop die zegt waar je op het moment staat. Zelf ben ik een beetje bezig geweest met annotaties, maar kreeg het niet lekker werkend, dus had dat weer verwijderd zodat ik iets beter wat ik wel had ook kon laten zien aan Roger.
