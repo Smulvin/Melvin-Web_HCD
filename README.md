@@ -153,58 +153,58 @@ Vandaag was ik begonnen met het maken van het annotatie menu. Dit probeerde ik e
 - Bezoek je websites vaker op je telefoon of op een desktop?
 
 #### Aantekningen Test met Roger Rafelli
-59 jaar oud, 43 toen eerste symptomen kreeg
-Werktuigbouwkunde achtergrond
-erfelike versie van macula degeneratie, niet geneesbaar
-andere vorm van leven gekregen, kan niet meer werken of auto rijden
-sommige dingen zijn nog niet beschikbaar voor slechtziende
-"Kerk silhouette zie je, maar de klok kan je niet zien"
-Ziet wel nog steeds gewoon goed alle kleuren, vroeg of laat worden ze wel aangetast. Contrast is heel belangrijk, maar ook lichtgevoeligheid
-Continu aan het aanpassen, altijd aan het leren
-Blinde geleide hond, gaat ook met pensioen na zoveel tijd (5 jaar)
-Er zijn wel hulpmiddelen, en de meeste helpen ook wel veel. Maar niet alles is er nog. Wordt wel elk jaar beter.
-Stichting Fidelio in Eindhoven
+- 59 jaar oud, 43 toen eerste symptomen kreeg
+- Werktuigbouwkunde achtergrond
+- erfelike versie van macula degeneratie, niet geneesbaar
+- andere vorm van leven gekregen, kan niet meer werken of auto rijden
+- sommige dingen zijn nog niet beschikbaar voor slechtziende
+- "Kerk silhouette zie je, maar de klok kan je niet zien"
+- Ziet wel nog steeds gewoon goed alle kleuren, vroeg of laat worden ze wel aangetast. Contrast is heel belangrijk, maar ook lichtgevoeligheid
+- Continu aan het aanpassen, altijd aan het leren
+- Blinde geleide hond, gaat ook met pensioen na zoveel tijd (5 jaar)
+- Er zijn wel hulpmiddelen, en de meeste helpen ook wel veel. Maar niet alles is er nog. Wordt wel elk jaar beter.
+- Stichting Fidelio in Eindhoven
 
-Gestopt als werktuigbouwkundige, is toch boeken gaan "lezen". Maar viel vaak in slaap. Luisterboeken hielp ook niet. Dus ging hij filosofie studeren zodat hij boeken ging lezen en annotaties kon maken om actief te gaan lezen.
-Wilt aantekeningen kunnen maken van waar het staat. Wilt een makkelijke manier om notities terug te vinden. 
-Hij heeft wel een notitieboekje, maar kan niet meer zijn eigen handschrift lezen
-Tooltje waar hij een tekst in kan vullen zodat hij makkelijk aantekeningen kan maken
-Kan geen volledige zinnen meer lezen, je moet het voorstellen alsof je altijd een vuist voor je gezicht heeft.
-Heeft wel skills geleerd om het nog een beetje te kunnen, maar is nog steeds lastig.
-Dingen met kleur signaleren is mogelijk.
-Fan van dark mode, dus we willen niet een volledig witte website hebben
-Kan dus niet echt meer zijn eigen handschrift, maar door het op te schrijven helpt het wel met onthouden.
-Met Word heb je ook wel bepaalde knopjes om aantekeningen te maken, maar het is vooral altijd lastig om ze dan terug te vinden
-Auditief heeft wel voorkeur, dat het wordt voorgelezen. 
-Voorkeur voor typen
-Wat heel irritant is als mensen zeggen dat het toegankelijk is, maar het niet helemaal niet is. Dat soms het wel aan de WCAG voldoet, maar nog steeds niet goed werkt voor een slechtziende
-Met 1 oplossing kan je niet de hele doelgroep bereiken, wordt soms een beetje misbruikt. (Bijvoorbeeld Braille)
-Lieveer een soort Word bestand waar hij aantekeningen in kan maken, ipv een website waar hij aantekeningen kan maken
-Lastig om sommige boeken te kunnen lezen, want niet alles heeft een braille of digitale versie.
-Leest boeken op desktop en mobiel, maar maakt de aantekeningen altijd vanaf desktop. Want daar gaat het iets makkelijker.
-Er is wel behoefte om het op mobiel te kunnen, maar er is nog geen makkelijke tool voor. Lastig om notities terug te vinden
-NVDA en Supernova als screenreader gebruikt hij
-Aantekeningen koppelen aan een specifiek soort boek. (Dus het is wel handig als de aantekeningen gesorteerd zijn)
-Zit een beetje in een tussengebied, hij kan nog wel dingen zien, maar heeft wel een screenreader nodig omdat het ook snel vermoeid.
-Sorteert atm notities per bladzijdes, maar is wel handig om een sub categorie te hebben daarvoor ipv alleen per boek.
+- Gestopt als werktuigbouwkundige, is toch boeken gaan "lezen". Maar viel vaak in slaap. Luisterboeken hielp ook niet. Dus ging hij filosofie studeren zodat hij boeken ging lezen en annotaties kon maken om actief te gaan lezen.
+- Wilt aantekeningen kunnen maken van waar het staat. Wilt een makkelijke manier om notities terug te vinden. 
+- Hij heeft wel een notitieboekje, maar kan niet meer zijn eigen handschrift lezen
+- Tooltje waar hij een tekst in kan vullen zodat hij makkelijk aantekeningen kan maken
+- Kan geen volledige zinnen meer lezen, je moet het voorstellen alsof je altijd een vuist voor je gezicht heeft.
+- Heeft wel skills geleerd om het nog een beetje te kunnen, maar is nog steeds lastig.
+- Dingen met kleur signaleren is mogelijk.
+- Fan van dark mode, dus we willen niet een volledig witte website hebben
+- Kan dus niet echt meer zijn eigen handschrift, maar door het op te schrijven helpt het wel met onthouden.
+- Met Word heb je ook wel bepaalde knopjes om aantekeningen te maken, maar het is vooral altijd lastig om ze dan terug te vinden
+- Auditief heeft wel voorkeur, dat het wordt voorgelezen. 
+- Voorkeur voor typen
+- Wat heel irritant is als mensen zeggen dat het toegankelijk is, maar het niet helemaal niet is. Dat soms het wel aan de WCAG voldoet, maar nog steeds niet goed werkt voor een slechtziende
+- Met 1 oplossing kan je niet de hele doelgroep bereiken, wordt soms een beetje misbruikt. (Bijvoorbeeld Braille)
+- Lieveer een soort Word bestand waar hij aantekeningen in kan maken, ipv een website waar hij aantekeningen kan maken
+- Lastig om sommige boeken te kunnen lezen, want niet alles heeft een braille of digitale versie.
+- Leest boeken op desktop en mobiel, maar maakt de aantekeningen altijd vanaf desktop. Want daar gaat het iets makkelijker.
+- Er is wel behoefte om het op mobiel te kunnen, maar er is nog geen makkelijke tool voor. Lastig om notities terug te vinden
+- NVDA en Supernova als screenreader gebruikt hij
+- Aantekeningen koppelen aan een specifiek soort boek. (Dus het is wel handig als de aantekeningen gesorteerd zijn)
+- Zit een beetje in een tussengebied, hij kan nog wel dingen zien, maar heeft wel een screenreader nodig omdat het ook snel vermoeid.
+- Sorteert atm notities per bladzijdes, maar is wel handig om een sub categorie te hebben daarvoor ipv alleen per boek.
 
 Proof of concepts 
-Niet duidelijk waar je bent, wat actief is
-Moeten kunnen navigeren binnen een tekst. 
-Handig dat teksten soort van gemarkeerd worden van waar je bent in de tekst
-Wilt wel nog steeds een beetje mee kunnen lezen, zonder dat het vermoeiend wordt
-Handig dat het per zin gaat.
-Annotaties met meestal meer dan 1 regel
-Verschillende programma's hebben verschillende sneltoetsen
-Je weet misschien wel dat het de tweede opmerking is, maar het is slecht soms terug te vinden
-Verschillende instellingen voor bijvoorbeeld lettergroottes kan handig zijn
-zwart geel is een fijn kleur contrast
+- Niet duidelijk waar je bent, wat actief is
+- Moeten kunnen navigeren binnen een tekst. 
+- Handig dat teksten soort van gemarkeerd worden van waar je bent in de tekst
+- Wilt wel nog steeds een beetje mee kunnen lezen, zonder dat het vermoeiend wordt
+- Handig dat het per zin gaat.
+- Annotaties met meestal meer dan 1 regel
+- Verschillende programma's hebben verschillende sneltoetsen
+- Je weet misschien wel dat het de tweede opmerking is, maar het is slecht soms terug te vinden
+- Verschillende instellingen voor bijvoorbeeld lettergroottes kan handig zijn
+- zwart geel is een fijn kleur contrast
 
 MIJN OPDRACHT
-Lastig om nog steeds zinnen te lezen
-Wordt snel vermoeiend
-Wel een echt leuk idee omdat wel echt goed het probleem weer geeft
-Markeren met achtergrond in verschillende kleuren zou waarschijnlijk niet verbeteren
+- Lastig om nog steeds zinnen te lezen
+- Wordt snel vermoeiend
+- Wel een echt leuk idee omdat wel echt goed het probleem weergeeft
+-Markeren met achtergrond in verschillende kleuren zou waarschijnlijk niet verbeteren
 
 #### Checkout met Dylan
 Ik had de checkout online met Dylan gedaan. Dylan was vandaag vooral bezig met het beter maken voor screenreaders. Dat knoppen betere teksten uitspreken in plaats standaard dingen. De testpersoon vondt het goed hoe zijn knoppen stonden, maar hij kwam wel nog een fout tegen bij de knop die zegt waar je op het moment staat. Zelf ben ik een beetje bezig geweest met annotaties, maar kreeg het niet lekker werkend, dus had dat weer verwijderd zodat ik iets beter wat ik wel had ook kon laten zien aan Roger.
@@ -213,3 +213,7 @@ Ik had de checkout online met Dylan gedaan. Dylan was vandaag vooral bezig met h
 Deze week ben ik begonnen met het maken van de opdracht. We kregen mee dat we soms juist een beetje rare ideeën moesten verzinnen als het goed om exclusive design. Daarom was ik begonnen met het maken van iets waarvan ik niet zeker wist of het een goede manier zou zijn voor het probleem. Maar het was wel uniek. Mijn idee was dat hij moeite heeft met zinnen lezen omdat er een vlek in zijn zicht zit waar woorden dan achter verdwijnen. Dus probeerde ik ervoor te zorgen dat de woorden niet meer achter die vlek zouden zitten door ze er omheen te laten vormen. Nou weet ik natuurlijk niet perfect waar die vlek zit dus had ik ook wat instellingen gemaakt zodat je "de vlek" kon bewegen over het scherm heen en kon vergroten of verkleinen.<br><br>
 Deze week ben ik ook bezig geweest met het maken van annotaties. Hier had ik eerst ChatGPT om gevraagd om te kijken wat hij er van zou maken. Maar ik merkte al snel dat ik tegen verschillende obstakels op liep tijdens het maken ervan. Dit voornamelijk door de manier hoe ik mijn blinde vlek systeem had gemaakt. Dus voor nu had ik die annotatie code weer verwijderd en had ik mijn blinde vlek systeem nog gehouden zodat ik dat in ieder geval een beetje kon testen met Roger.<br><br>
 De test met Roger was wel heel fijn. We hebben eerst een uur gepraat over zijn aandoening, zodat we een beter beeld krijgen van hoe hij de wereld ervaart. Daarna konden we zelf nog onze eerste prototypes een beetje met hem testen. Uit testen van andere kwamen ook handig resultaten zoals dat het niet altijd duidelijk is welk element nu gefocust is of een goede kleuren contrast. Uit mijn eigen test kwam vooral dat hij het wel een heel leuk idee vond, omdat het goed zijn probleem weergeeft. Maar dat het nog steeds vermoeiened is om op deze manier zinnen te lezen. Misschien is het dus toch handiger voor mij om het hele blinde vlek systeem weg te doen. Niet alleen zodat annotaties makkelijker te maken zijn maar ook zodat het meer accesible is.
+
+### Voortgangsgesprek
+Ik had mijn oplossing voor mijn probleem laten zien aan het groepje. Met dat de teksten om de vlek heen vormen. Ik had verteld hoe Roger het wel echt een leuk idee vond, maar dat het nog steeds lastig en vermoeiend was om het goed te lezen. Vasilis stelde voor om toch nog een kleine iteratie te maken met een soort zebra patroon om te kijken om niet meteen dit idee op te geven. Dus dat kan ik sowieso gaan doen, maar ik zag ook nog wel andere problemen als het gaat om accessibility voor een screenreader en het maken van annotaties. <br>
+Vasilis had daar ook voor voorgesteld om misschien zelfs een eigen screenreader te bouween. Dit zou namelijk ook helpen met het probleem van of ik het voor telefoon of desktop moet gaan maken. Telefoon heeft namelijk wel veel onderzoek mogelijkheden omdat er op het moment nog niet echt een goed systeem voor dit probleem is.
