@@ -71,6 +71,41 @@ function wrapWords() {
       span.style.transform = "translateX(0px)";
     }
   });
+
+  applyZebraLines();
+}
+
+function applyZebraLines() {
+  const lines = new Map();
+
+  // Group spans by their vertical position (line)
+  document.querySelectorAll(".text p span").forEach(span => {
+    const top = Math.round(span.getBoundingClientRect().top);
+
+    if (!lines.has(top)) {
+      lines.set(top, []);
+    }
+    lines.get(top).push(span);
+  });
+
+  const yellow = "#FFD400";
+  const dark = "#2E2E2E";
+
+  let lineIndex = 0;
+
+  lines.forEach(lineSpans => {
+    const isEven = lineIndex % 2 === 0;
+
+    const bg = isEven ? yellow : dark;
+    const color = isEven ? dark : yellow;
+
+    lineSpans.forEach(span => {
+      span.style.backgroundColor = bg;
+      span.style.color = color;
+    });
+
+    lineIndex++;
+  });
 }
 
 // Event listeners

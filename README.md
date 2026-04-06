@@ -217,3 +217,27 @@ De test met Roger was wel heel fijn. We hebben eerst een uur gepraat over zijn a
 ### Voortgangsgesprek
 Ik had mijn oplossing voor mijn probleem laten zien aan het groepje. Met dat de teksten om de vlek heen vormen. Ik had verteld hoe Roger het wel echt een leuk idee vond, maar dat het nog steeds lastig en vermoeiend was om het goed te lezen. Vasilis stelde voor om toch nog een kleine iteratie te maken met een soort zebra patroon om te kijken om niet meteen dit idee op te geven. Dus dat kan ik sowieso gaan doen, maar ik zag ook nog wel andere problemen als het gaat om accessibility voor een screenreader en het maken van annotaties. <br>
 Vasilis had daar ook voor voorgesteld om misschien zelfs een eigen screenreader te bouween. Dit zou namelijk ook helpen met het probleem van of ik het voor telefoon of desktop moet gaan maken. Telefoon heeft namelijk wel veel onderzoek mogelijkheden omdat er op het moment nog niet echt een goed systeem voor dit probleem is.
+
+## Week 2
+### Maandag 6 - 4 - 2026
+Vandaag is het pasen dus heb ik niet heel veel aan HCD gezeten. Wel heb ik een kleine iteratie nog gemaakt op mijn idee aan de hand van de feedback van Roger en van Vasilis. Roger vond mijn vlek idee leuk maar het was nog steeds moeilijk en vermoeiend om te lezen. Ik had gevraagd of achtergrond kleur misschien zou helpen maar dat wist hij niet zeker. Vasilis stelde voor om toch even een zebra patroon erop te gooien. Dit heb ik gecombineerd samen met een kleurenschema dat Roger had voorgesteld, darktheme met geel als accent. Daar kwam het volgende uit.
+<img src="Assets/README_imgs/Iteratie1_Zebra+Thema.png" alt="Hetzelfde idee, maar dan met een geel, donker grijs zebra patroon over de tekst heen">
+<br>
+Het was wel makkelijk te lezen, maar het was wel veel geel in 1 keer op je scherm, waardoor het misschien een beetje in elkaar overvloeit. Dit heb ik proberen te fixen door de grijs iets lichter te maken zodat het niet meteen in je gezicht schreeuwt.
+<img src="Assets/README_imgs/Iteratie1_Zebra+LichtereGrijs.png" alt="Een licthere grijs is gebruikt zodat de geel iets subtieler wordt">
+<br>
+Ik vond dat ik hier nog meer op kan verbeteren om de leesbaar heen makkelijker te maken. Ik besloot de lijn hoogte van elke regel aan te passen zodat je beter kon zien voor en na de vlek waar de regel begint en eindigt. Ik vind er al een heel stuk duidelijker uitzien dan tijdens de vorige test.
+<img src="Assets/README_imgs/Iteratie1_Zebra+LichtereGrijs+Lijnhoogte.png" alt="Ik heb de lijnhoogte aangepast zodat je makkelijker kan zien, na de blinde vlek waar je was gebleven.">
+
+#### Weekly Geek
+Accessibility and the agentic web
+https://tetralogical.com/blog/2025/08/08/accessibility-and-the-agentic-web/
+8 august, 2025 by Léonie Watson
+
+A lot of simple things are harder for people with disabilities. Even simple things like clothesshopping are really difficult, even online. Since most of the times the websites arent accessibile. Even the most accessible retail websites arent accessibile enough for a blind person to go shopping, since they dont get enough information without pictures.<Br>
+AI could help, they can generate text according to what it sees on an image within the screenreader, but it is not that great. But still, the descriptions arent good enough. But we have been saying that for 30 years. Even if the description is correct, if it comes from an image or just straight text, the screenreader still needs to be able to find it. It still just takes a lot of time, even if the screenreader can find the images.<br>
+There is new technology though, called innosearch. An AI tool that helps you search over 500.000 different stores. It helps you get a clear list of products and gives you information you normally had to fight to get too. Using an agentic AI called CoBrowse you can ask him for a specific type of product and it searches for it for you. Plus you can just "ask" them, since typing could be annoying when you are blind. It can do pretty much everything a personal shopping assistent could do, except for paying of course.<br>
+It begs the questions, why do we even have websites, if we can just ask an AI to shop for us. Since the sheer quantity of products and different stores can be overwhelming. As humans we like convencience and dislike effort. But we prefer a graphical interface. Since certain graphics are easier to recognize than memorizing countless command lines.<br>
+Léonie is not saying that websites will change significantly, since they are already changing every day. The statistics already show that the use of AI is going up significantly.<br>
+Will AI help with accessibility in the long run? Since if you ask the same prompt twice, you wont get the same answer each time. So why would other systems like innosearch give you the same results, or even the correct results?
+
