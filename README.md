@@ -241,3 +241,12 @@ It begs the questions, why do we even have websites, if we can just ask an AI to
 Léonie is not saying that websites will change significantly, since they are already changing every day. The statistics already show that the use of AI is going up significantly.<br>
 Will AI help with accessibility in the long run? Since if you ask the same prompt twice, you wont get the same answer each time. So why would other systems like innosearch give you the same results, or even the correct results?
 
+### Dag 3: Dinsdag 7 - 4 - 2025
+Gewerkt aan toegankelijkheid - NVDA getest en bestuurbaar gemaakt, aparte tekst gebruiken om voor te laten lezen omdat screenreader deze tekst niet goed pakt
+Elke keer als ik iets wil toevoegen of veranderen aan dit design, wordt ik tegengehouden door het systeem dat de tekst laat verplaatsen, want dat werkt helemaal niet voor screenreaders
+
+#### Vragen voor Roger
+- Liever dat annotaties altijd in scherm staan of een apart scherm van in en uit schuift?
+- Liever meer focus op toegankelijk of op huidig concept?
+- Is het nu beter leesbaar?
+- Is er een lettertype dat u graag gebruikt? Zoals er ook eentje is voor Dyslexie
