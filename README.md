@@ -242,12 +242,33 @@ Léonie is not saying that websites will change significantly, since they are al
 Will AI help with accessibility in the long run? Since if you ask the same prompt twice, you wont get the same answer each time. So why would other systems like innosearch give you the same results, or even the correct results?
 
 ### Dag 3: Dinsdag 7 - 4 - 2025
-Vandaag ben ik bezig geweest met het meer toegankelijk maken van mijn design. Dit begon met het downloaden van NVDA, dezelfde screenreader als Roger. Het duurde niet lang voordat ik deze een beetje onder de knie kreeg, maar ik merkte al snel dat mijn gehele tekst niet echt goed gelezen kon worden. Na veel uitzoeken en aan ChatGPT vragen kwam ik erachter dat het komt omdat elk woord een span heeft en die gebruikt worden om de tekst te laten formateren om de blinde vlek heen. Dit heb ik proberen op te lossen door de originele tekst te kopiëren en die te gebruiken voor de screenreader. Dit werkte beter, maar hij leest nog steeds niet correct de zinnen voor. Dit kwam eerst ook omdat ik met H en P headers en paragrafen probeerde te vinden, maar dat werkt minder goed dan pijltjestoetsen. Met pijltjestoetsen kan je beter de teksten lezen, maar stopt hij soms nog steeds soms midden in een zin of leest hij maar 1 woord tegelijk voor. Wat ik wel nog correct heb kunnen toevoegen is dat de tekst dikgedrukt is, het leek me dan beter leesbaar. Maar ik denk dat het misschien beter is om dit idee te laten vallen, het was absurd en gaf goed het probleem van de gebruiker weer, maar het werkt minder goed als het gaat om toegankelijkheid. Ik zal tijdens de test hier nog wat vragen over stellen. Want op het moment als ik iets nieuws toevoegen zoals annotaties of betere toegankelijkheid voor screenreaders loop ik er altijd tegenop van hoe nu de blinde vlek is opgesteld.
+Vandaag ben ik bezig geweest met het meer toegankelijk maken van mijn design. Dit begon met het downloaden van NVDA, dezelfde screenreader als Roger. Het duurde niet lang voordat ik deze een beetje onder de knie kreeg, maar ik merkte al snel dat mijn gehele tekst niet echt goed gelezen kon worden. Na veel uitzoeken en aan ChatGPT vragen kwam ik erachter dat het komt omdat elk woord een span heeft en die gebruikt worden om de tekst te laten formateren om de blinde vlek heen. Dit heb ik proberen op te lossen door de originele tekst te kopiëren en die te gebruiken voor de screenreader. Dit werkte beter, maar hij leest nog steeds niet correct de zinnen voor. Dit kwam eerst ook omdat ik met H en P headers en paragrafen probeerde te vinden, maar dat werkt minder goed dan pijltjestoetsen. Met pijltjestoetsen kan je beter de teksten lezen, maar stopt hij soms nog steeds soms midden in een zin of leest hij maar 1 woord tegelijk voor. Wat ik wel nog correct heb kunnen toevoegen is dat de tekst dikgedrukt is, het leek me dan beter leesbaar. Maar ik denk dat het misschien beter is om dit idee te laten vallen, het was absurd en gaf goed het probleem van de gebruiker weer, maar het werkt minder goed als het gaat om toegankelijkheid. Ik zal tijdens de test hier nog wat vragen over stellen. Want op het moment als ik iets nieuws wil toevoegen zoals annotaties of betere toegankelijkheid voor screenreaders loop ik er altijd tegenop van hoe nu de blinde vlek is opgesteld.
 
 <img src="Assets/README_imgs/Dag3_Voortgang.png" alt="De blinde vlek/distortie is nu ontzichtbaar en de tekst is dikgedrukt">
 
 #### Vragen voor Roger
-- Liever dat annotaties altijd in scherm staan of een apart scherm van in en uit schuift?
+- Liever dat annotaties altijd in scherm staan of een apart scherm dat in en uit schuift?
 - Liever meer focus op toegankelijk of op huidig concept?
-- Is het nu beter leesbaar?
+- Is het nu beter leesbaar? (Verschillende kleuren, dikker lettertype en meer regelafstand)
 - Is er een lettertype dat u graag gebruikt? Zoals er ook eentje is voor Dyslexie
+
+#### Testen met Roger
+Roger had zijn laptop weer niet mee, dus hij liet hij wat dingen op zijn mobiel zien van hoe hij boeken probeert te lezen op mobiel.<br>
+Heeft een probleem met dingen navigeren op mobiel. Hij heeft ook niet altijd zijn laptop mee. Dus wilt hem ook liever op mobiel <br>
+Wilt een tooltje op mobiel om goed en makkelijk te lezen maar dus ook aantekeningen te maken, heeft een draadloos toetsenbordje<br>
+Per bladzijde een annotatie willen maken, en dus dan ook weer makkelijk terug willen kunnen vinden.<br>
+
+##### Uit andere testen
+Handig om een losse knop te hebben om naar je notaties te gaan<br>
+Heel fijn als je notities per alinea kan maken, maar dat hij dan dus ook voorleest over welke alinea je een aantekeningen aan het maken bent.<br>
+Moet of heel duidelijk visueel of audieel duidelijk zijn waar de focus ligt<br>
+Tis wel standaard dat je met tab door een tekst heen kan, en dan het liefst niet per zin. Want annotaties zijn het handigst per alinea <br>
+Losse letters in uitleg teksten zoals een "A" gaat een screenreader te snel doorheen dus dat hoor je minder goed. <br>
+Je kan in de screenreader iets instellen dat hij automatisch switched naar een andere stem. Daarvoor moet je meerdere stemmen installeren<br>
+Vaak maakt hij sporadisch een beetje aantekeningen<br>
+Zou fijn zijn als je annoaties ook nog een keer kan bewerken, liever ook bewerken dan 2 notities om hetzelfde blok<br>
+Een denk wolk iccontje is al genenog aan het begin van een zin om aan te geven dat die zin een annoatie heeft<br>
+
+
+##### Mijn test
+Hij vond het al een stuk fijner lezen, maar het is wel belangrijk dat het de screenreader goed werkt, want een paar woorden gaat nog wel, maar voor grotere teksten is een screenreader wel echt nodig. Het zou misschien een beetje lastig worden om dit werkend te krijgen op een telefoon, maar hij heeft dus ook een losse tablet/ipad met een extern draadloos toetsenbord. Dus misschien dat ik daar meer mijn focus op leg. Annotaties kan ik misschien meer focussen op paragrafen i.p.v. op een los woord of een zin. Het zou fijner zijn als hij in 1x kan zien of er annotaties zijn gemaakt. Dus niet een los tabblad waar alle annotaties in staan. Hij heeft ook geen voorkeur voor een lettertype, zolang de letters maar goed bij elkaar staan en het niet een heel raar lettertype is, maar iets standaards zou prima zijn. 
