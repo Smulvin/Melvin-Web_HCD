@@ -232,7 +232,7 @@ Ik vond dat ik hier nog meer op kan verbeteren om de leesbaar heen makkelijker t
 #### Weekly Geek
 Accessibility and the agentic web
 https://tetralogical.com/blog/2025/08/08/accessibility-and-the-agentic-web/
-8 august, 2025 by Léonie Watson
+8 augustus, 2025 by Léonie Watson
 
 A lot of simple things are harder for people with disabilities. Even simple things like clothesshopping are really difficult, even online. Since most of the times the websites arent accessibile. Even the most accessible retail websites arent accessibile enough for a blind person to go shopping, since they dont get enough information without pictures.<Br>
 AI could help, they can generate text according to what it sees on an image within the screenreader, but it is not that great. But still, the descriptions arent good enough. But we have been saying that for 30 years. Even if the description is correct, if it comes from an image or just straight text, the screenreader still needs to be able to find it. It still just takes a lot of time, even if the screenreader can find the images.<br>

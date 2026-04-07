@@ -3,10 +3,17 @@ const paragraphs = document.querySelectorAll(".text p");
 
 paragraphs.forEach(p => {
   const originalText = p.textContent.trim();
-  p.setAttribute("aria-label", originalText); // for screen readers
-  p.textContent = ""; // clear paragraph
 
-  // Wrap each word in a span and hide from screen readers
+  // Clear paragraph first
+  p.textContent = "";
+
+  // Create a hidden span for screen readers
+  const srSpan = document.createElement("span");
+  srSpan.classList.add("sr-only");
+  srSpan.textContent = originalText;
+  p.appendChild(srSpan);
+
+  // Create spans for each word (for distortion), aria-hidden
   originalText.split(/\s+/).forEach(word => {
     const span = document.createElement("span");
     span.textContent = word + " ";
