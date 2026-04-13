@@ -1,24 +1,15 @@
 // Grab all paragraphs inside .text
-const paragraphs = document.querySelectorAll(".text p");
+const textElements = document.querySelectorAll(".text p, h1, h2, h3, h4, h5, h6");
 
-paragraphs.forEach(p => {
-  const originalText = p.textContent.trim();
+textElements.forEach(el => {
+  const originalText = el.textContent.trim();
 
-  // Clear paragraph first
-  p.textContent = "";
+  el.textContent = "";
 
-  // Create a hidden span for screen readers
-  const srSpan = document.createElement("span");
-  srSpan.classList.add("sr-only");
-  srSpan.textContent = originalText;
-  p.appendChild(srSpan);
-
-  // Create spans for each word (for distortion), aria-hidden
   originalText.split(/\s+/).forEach(word => {
     const span = document.createElement("span");
     span.textContent = word + " ";
-    span.setAttribute("aria-hidden", "true");
-    p.appendChild(span);
+    el.appendChild(span);
   });
 });
 
@@ -39,7 +30,7 @@ function updateDistorter() {
   const viewportWidth = window.innerWidth;
   const viewportHeight = window.innerHeight;
 
-  const size = 50 + sizeInput.value * 2; // min 50px, max ~250px
+  const size = 50 + sizeInput.value * 2;
   const x = (xInput.value / 100) * viewportWidth;
   const y = (yInput.value / 100) * viewportHeight;
 
@@ -49,9 +40,8 @@ function updateDistorter() {
   distorter.style.top = `${y}px`;
   distorter.style.transform = `translate(-50%, -50%)`;
 
-  requestAnimationFrame(wrapWords); // recalc wrapping whenever distorter moves
+  requestAnimationFrame(wrapWords);
 
-  // Save current values
   const currentValues = { size: sizeInput.value, x: xInput.value, y: yInput.value };
   localStorage.setItem("distorterValues", JSON.stringify(currentValues));
 }
@@ -64,7 +54,7 @@ function wrapWords() {
   const centerY = rect.top + radius;
   const padding = 4;
 
-  document.querySelectorAll(".text p span").forEach(span => {
+  document.querySelectorAll(".text p span, .text h1 span, .text h2 span, .text h3 span, .text h4 span, .text h5 span, .text h6 span").forEach(span => {
     const spanRect = span.getBoundingClientRect();
     const spanCenterY = (spanRect.top + spanRect.bottom) / 2;
     const dy = spanCenterY - centerY;
@@ -85,8 +75,7 @@ function wrapWords() {
 function applyZebraLines() {
   const lines = new Map();
 
-  // Group spans by their vertical position (line)
-  document.querySelectorAll(".text p span").forEach(span => {
+  document.querySelectorAll(".text p span, .text h1 span, .text h2 span, .text h3 span, .text h4 span, .text h5 span, .text h6 span").forEach(span => {
     const top = Math.round(span.getBoundingClientRect().top);
 
     if (!lines.has(top)) {

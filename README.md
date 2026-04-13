@@ -278,3 +278,12 @@ Deze week hadden we niet heel veel tijd op school om aan de opdracht te werken, 
 
 ### Voortgangsgesprek
 Tijdens het voortgangsgesprek kwam er vooral uit dat de volgende stap dus echt het goed laten werken van de screenreaders is en dat mag een beetje gefaked worden. Het hoeft niet perfect te werken voor elk soort stuk tekst. Daarbij had ik ook geleerd dat je per element in de HTML kan aangeven welke taal het is, dit werkt beter voor screenreaders en dan hoef je niet een aparte stem te downloaden binnen je screenreader. Hier kan ik dus ook later nog naar kijken.
+
+## Week 3
+### Dag 4 Maandag 13 - 4 - 2026
+Vandaag werkte ik thuis omdat het lokaal bezet was. Als eerste wilde ik werken om mijn website beter te maken voor screenreaders. Oorspronkelijk kon hij vaak geen paragraaf of H elementen vinden. Ik kwam erachter dat dit kwam door een regel javascript die ik geschreven om ervoor te zorgen dat niet elke los span wordt voorgelezen. Voor nu leek het me beter als de screenreader wel uberhaupt iets kan lezen. Op het moment maakt het toch niet heel veel uit, want het klinkt sowieso een beetje vreemd, hij gebruikt namelijk een Nederlandse stem om Engelse teksten voor te lezen. Daarna had ik ook de opbouw van de teksten veranderend. Ik heb de stukken tekst opgedeeld in kleinere stukken en heb ze allemaal een eigen heading gegeven. Op die manier kon ik daarna namelijk makkelijker de annotaties maken. De basis van de annotaties was wel redelijk snel opgezet, maar het zat hem in de details. Zoals het opslaan, bewerken en verwijderen van de annotaties. Daar zat soms wat moeilijkheid in. Zoals het correct positioneren van de annotaties en soms een probleem met wat styling. Morgen wil ik gaan werken om de annotaties beter te laten werken voor screenreaders en blinde mensen zodat ik dat die middag kan gaan testen met Roger.
+
+<img src="Assets/README_imgs/Iteratie2_Annotaties.png" alt="">
+
+#### Checkout met Dylan
+Omdat Dylan makkelijk voor mij te bereiken was en ik wist dat hij ook thuis werkte, hadden we onze checkout samen online gedaan. Dylan heeft vandaag vooral gewerkt aan het netjes maken van zijn javascript, hij heeft het opgedeeld in 2 verschillende scripts voor overzicht. Voor de rest is hij bezig geweest met het goed maken voor screenreaders dat teksten correct worden voorgelezen en dat je met de pijltjestoetsen je personage kan bewegen op het grid.
