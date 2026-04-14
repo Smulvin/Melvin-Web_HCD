@@ -1,6 +1,7 @@
 const paragraphs = Array.from(document.querySelectorAll(".text p"));
 const annotationPanel = document.querySelector(".annotations");
 const annoContext = document.getElementById("anno-context");
+const status = document.getElementById("anno-status");
 
 // Paragraph setup
 let currentParagraph = null;
@@ -28,6 +29,14 @@ function setCurrentParagraph(p) {
     currentParagraph = p;
 }
 
+// 🔊 Live region helper
+function announce(message) {
+    status.textContent = "";
+
+    setTimeout(() => {
+        status.textContent = message;
+    }, 50);
+}
 
 // Fallback: paragraph closest to viewport top
 function getVisibleParagraph() {
@@ -62,9 +71,10 @@ function renderAnnotations() {
         const scrollTop = window.scrollY;
 
         const clone = template.content.cloneNode(true);
-
         const item = clone.querySelector(".annotation-item");
+
         item.dataset.id = id;
+        item.tabIndex = 0;
 
         item.style.position = "absolute";
         item.style.top = `${rect.top + scrollTop}px`;
@@ -76,7 +86,7 @@ function renderAnnotations() {
         clone.querySelector(".anno-text").textContent =
             anno.text;
 
-        // Delete button
+        // Buttons
         const deleteBtn = clone.querySelector(".delete-btn");
         const editBtn = clone.querySelector(".edit-btn");
 
@@ -86,6 +96,8 @@ function renderAnnotations() {
             delete annotations[id];
             saveAnnotations();
             renderAnnotations();
+
+            announce("Annotatie verwijderd");
         });
 
         editBtn.addEventListener("click", (e) => {
@@ -109,7 +121,6 @@ function openAnnotationForParagraph(p, editId = null, existingItem = null) {
 
     const existing = editId ? annotations[editId] : null;
 
-    // --- TEMPLATE ---
     const template = document.getElementById("anno-editor-template");
     const clone = template.content.cloneNode(true);
 
@@ -117,10 +128,17 @@ function openAnnotationForParagraph(p, editId = null, existingItem = null) {
     const textarea = clone.querySelector("#anno-input");
     const saveBtn = clone.querySelector("#save-anno");
 
-    headingEl.textContent = h4 ? h4.innerText : "No section";
+    const sectionName = h4 ? h4.innerText : "geen sectie";
+
+    headingEl.textContent = sectionName;
     textarea.value = existing ? existing.text : "";
 
-    // --- CONTAINER LOGIC ---
+    // ✅ Better accessibility (on textarea)
+    textarea.setAttribute(
+        "aria-label",
+        `Annotatie maken ${sectionName}`
+    );
+
     let container;
 
     if (existingItem) {
@@ -128,7 +146,7 @@ function openAnnotationForParagraph(p, editId = null, existingItem = null) {
         container = existingItem;
         container.innerHTML = "";
     } else {
-        // ➕ NEW MODE → create new positioned container
+        // ➕ NEW MODE
         container = document.createElement("div");
         container.className = "anno-new";
 
@@ -143,10 +161,10 @@ function openAnnotationForParagraph(p, editId = null, existingItem = null) {
 
     container.appendChild(clone);
 
-    // focus for accessibility
+    // focus
     setTimeout(() => textarea.focus(), 50);
 
-    // --- SAVE ---
+    // SAVE
     saveBtn.addEventListener("click", () => {
         const text = textarea.value.trim();
         if (!text) return;
@@ -155,19 +173,32 @@ function openAnnotationForParagraph(p, editId = null, existingItem = null) {
 
         annotations[id] = {
             text,
-            heading: h4 ? h4.innerText : "Alinea",
+            heading: sectionName,
         };
 
         saveAnnotations();
         renderAnnotations();
+
+        // announce
+        const message = editId
+            ? "Annotatie bijgewerkt"
+            : "Annotatie opgeslagen";
+
+        announce(message);
+
+        // return focus to updated annotation
+        setTimeout(() => {
+            const updated = document.querySelector(`[data-id="${id}"]`);
+            if (updated) updated.focus();
+        }, 100);
     });
 }
 
 function saveAnnotations() {
-  localStorage.setItem("annotations", JSON.stringify(annotations));
+    localStorage.setItem("annotations", JSON.stringify(annotations));
 }
 
-// Keyboard shortcut making annotation
+// Keyboard shortcut → create annotation
 document.addEventListener("keydown", (e) => {
     if (e.altKey && e.key.toLowerCase() === "a") {
         e.preventDefault();
@@ -181,7 +212,7 @@ document.addEventListener("keydown", (e) => {
     }
 });
 
-// Keyboard shortcut to open annotaions
+// Keyboard shortcut → jump to annotations
 document.addEventListener("keydown", (e) => {
     if (e.altKey && e.shiftKey && e.key.toLowerCase() === "a") {
         e.preventDefault();
@@ -196,4 +227,6 @@ document.addEventListener("keydown", (e) => {
     }
 });
 
+// Keep positions correct
 window.addEventListener("resize", renderAnnotations);
+window.addEventListener("scroll", renderAnnotations);

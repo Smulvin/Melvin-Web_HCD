@@ -11,16 +11,34 @@
 <body>
     <form id="distortion-menu" lang="nl">
         <label>
-            Grootte van de distortie:
+            Grootte van de vlek:
             <input type="range" id="distortion-size" min="0" max="1000" value="0">
         </label>
         <label>
-            X positie van de distortie:
+            X positie van de vlek:
             <input type="range" id="distortion-x" min="0" max="100" value="0">
         </label>
         <label>
-            Y positie van de distortie:
+            Y positie van de vlek:
             <input type="range" id="distortion-y" min="0" max="100" value="0">
+        </label>
+        <label>
+            Lettertype:
+            <select id="font-selector">
+                <option value="system-ui, sans-serif">Sans-serif, standaard</option>
+                <option value="Arial, sans-serif">Arial</option>
+                <option value="Helvetica, Arial, sans-serif">Helvetica</option>
+                <option value="Verdana, sans-serif">Verdana</option>
+                <option value="Tahoma, sans-serif">Tahoma</option>
+                <option value="'Trebuchet MS', sans-serif">Trebuchet MS</option>
+
+                <option value="'Segoe UI', sans-serif">Segoe UI</option>
+                <option value="Roboto, sans-serif">Roboto</option>
+                <option value="Inter, sans-serif">Inter</option>
+
+                <option value="'Comic Sans MS', cursive">Comic Sans</option>
+                <option value="'Courier New', monospace">Courier (typewriter)</option>
+            </select>
         </label>
     </form>
 
@@ -36,7 +54,7 @@
             <h2>Introduction</h2>
 
             <h4 lang="nl">Alinea 1</h4>  
-            <p aria-label="The Republic of Plato is the longest of his works with the exception of the Laws, and is certainly the
+            <p lang="en" aria-label="The Republic of Plato is the longest of his works with the exception of the Laws, and is certainly the
                 greatest of them. There are nearer approaches to modern metaphysics in the Philebus and in the Sophist; the
                 Politicus or Statesman is more ideal; the form and institutions of the State are more clearly drawn out in
                 the Laws; as works of art, the Symposium and the Protagoras are of higher excellence. But no other Dialogue
@@ -54,7 +72,7 @@
             </p>
 
             <h4 lang="nl">Alinea 2</h4>
-            <p aria-label="Nowhere in Plato is there a deeper irony or a greater wealth of humor or imagery, or more dramatic
+            <p lang="en" aria-label="Nowhere in Plato is there a deeper irony or a greater wealth of humor or imagery, or more dramatic
                 power. Nor in any other of his writings is the attempt made to interweave life and speculation, or to
                 connect politics with philosophy. The Republic is the centre around which the other Dialogues may be
                 grouped; here philosophy reaches the highest point to which ancient thinkers ever attained. Plato among the
@@ -72,7 +90,7 @@
             </p>
 
             <h4 lang="nl">Alinea 3</h4>
-            <p aria-label="He was the greatest metaphysical genius whom the world has seen; and in him, more than in any other ancient 
+            <p lang="en" aria-label="He was the greatest metaphysical genius whom the world has seen; and in him, more than in any other ancient 
                 thinker, the germs of future knowledge are contained. The sciences of logic and psychology, which have supplied 
                 so many instruments of thought to after-ages, are based upon the analyses of Socrates and Plato. The principles of 
                 definition, the law of contradiction, the fallacy of arguing in a circle, the distinction between the essence and 
@@ -92,7 +110,7 @@
             </p>
 
             <h4 lang="nl">Alinea 4</h4>
-            <p aria-label="The greatest of all logical truths, and the one of which writers on
+            <p lang="en" aria-label="The greatest of all logical truths, and the one of which writers on
                 philosophy are most apt to lose sight, the difference between words and things, has been most strenuously
                 insisted on by him, although he has not always avoided the confusion of them in his own writings. But he
                 does not bind up truth in logical formulae, --logic is still veiled in metaphysics; and the science which he
@@ -108,7 +126,7 @@
             </p>
 
             <h4 lang="nl">Alinea 5</h4>
-            <p aria-label="Neither must we forget that the Republic is but the third part of a still larger design which was to have
+            <p lang="en" aria-label="Neither must we forget that the Republic is but the third part of a still larger design which was to have
                 included an ideal history of Athens, as well as a political and physical philosophy. The fragment of the
                 Critias has given birth to a world-famous fiction, second only in importance to the tale of Troy and the
                 legend of Arthur; and is said as a fact to have inspired some of the early navigators of the sixteenth
@@ -132,7 +150,7 @@
             </p>
 
             <h4 lang="nl">Alinea 6</h4>
-            <p aria-label="We can only guess why the great design was abandoned; perhaps because Plato became sensible of some 
+            <p lang="en" aria-label="We can only guess why the great design was abandoned; perhaps because Plato became sensible of some 
                 incongruity in a fictitious history, or because he had lost his interest in it, or because advancing years 
                 forbade the completion of it; and we may please ourselves with the fancy that had this imaginary narrative 
                 ever been finished, we should have found Plato himself sympathizing with the struggle for Hellenic independence, 
@@ -152,7 +170,7 @@
             </p>
 
             <h4 lang="nl">Alinea 7</h4>
-            <p aria-label="Again, Plato may be regarded as the "captain" (arhchegoz) or leader of a goodly band of followers; for in
+            <p lang="en" aria-label="Again, Plato may be regarded as the "captain" (arhchegoz) or leader of a goodly band of followers; for in
                 the Republic is to be found the original of Cicero's De Republica, of St. Augustine's City of God, of the
                 Utopia of Sir Thomas More, and of the numerous other imaginary States which are framed upon the same model.
                 The extent to which Aristotle or the Aristotelian school were indebted to him in the Politics has been
@@ -170,7 +188,7 @@
             </p>
 
             <h4 lang="nl">Alinea 8</h4>
-            <p aria-label="In English philosophy too, many affinities may be traced, not only in
+            <p lang="en" aria-label="In English philosophy too, many affinities may be traced, not only in
                 the works of the Cambridge Platonists, but in great original writers like Berkeley or Coleridge, to Plato
                 and his ideas. That there is a truth higher than experience, of which the mind bears witness to herself, is
                 a conviction which in our own generation has been enthusiastically asserted, and is perhaps gaining ground.
@@ -188,7 +206,7 @@
             </p>
 
             <h4 lang="nl">Alinea 9</h4>
-            <p aria-label="Like Dante or Bunyan, he has a revelation of another life; like Bacon, he is profoundly impressed with the un 
+            <p lang="en" aria-label="Like Dante or Bunyan, he has a revelation of another life; like Bacon, he is profoundly impressed with the un 
                 unity of knowledge; in the early Church he exercised a real influence on theology, and at the Revival of Literature 
                 on politics. Even the fragments of his words when "repeated at second-hand" have in all ages ravished the hearts of 
                 men, who have seen reflected in them their own higher nature. He is the father of idealism in philosophy, in
@@ -207,7 +225,7 @@
 
             <h3>Argument</h3>
             <h4 lang="nl">Alinea 10</h4>
-            <p aria-label="The argument of the Republic is the search after Justice, the nature of which is first hinted at by Cephalus,
+            <p lang="en" aria-label="The argument of the Republic is the search after Justice, the nature of which is first hinted at by Cephalus,
                 the just and blameless old man --then discussed on the basis of proverbial morality by Socrates and
                 Polemarchus --then caricatured by Thrasymachus and partially explained by Socrates --reduced to an
                 abstraction by Glaucon and Adeimantus, and having become invisible in the individual reappears at length in
@@ -227,7 +245,7 @@
             </p>
 
             <h4 lang="nl">Alinea 11</h4>
-            <p aria-label="We are thus led on to the conception of a higher State, in which "no man calls anything his
+            <p lang="en" aria-label="We are thus led on to the conception of a higher State, in which "no man calls anything his
                 own," and in which there is neither marrying nor giving in marriage, and kings are philosophers and
                 philosophers are kings; and there is another and higher education, intellectual as well as moral and
                 religious, of science as well as of art, and not of youth only but of the whole of life. Such a State is
@@ -245,7 +263,7 @@
             </p>
 
             <h4 lang="nl">Alinea 12</h4>
-            <p aria-label="When the wheel has come full circle we do not begin again with a new period of human life; but we have 
+            <p lang="en" aria-label="When the wheel has come full circle we do not begin again with a new period of human life; but we have 
                 passed from the best to the worst, and there we end. The subject is then changed and the old quarrel of poetry and
                 philosophy which had been more lightly treated in the earlier books of the Republic is now resumed and
                 fought out to a conclusion. Poetry is discovered to be an imitation thrice removed from the truth, and
@@ -270,15 +288,16 @@
         </div>
 
         <div id="distorter" aria-hidden="true"></div>
+        <div id="anno-status" class="sr-only" aria-live="polite"></div>
 
         <template id="anno-editor-template">
             <div class="anno-editor">
                 <h4 class="anno-heading"></h4>
                 <label>
-                Annotation:
+                Annotatie:
                 <textarea id="anno-input"></textarea>
                 </label>
-                <button id="save-anno">Save</button>
+                <button id="save-anno">Opslaan</button>
             </div>
         </template>
 
@@ -297,6 +316,7 @@
 
     <script src="Scripts/distortion.js"></script>
     <script src="Scripts/annotation.js"></script>
+    <script src="Scripts/font-changer.js"></script>
 
    </main>     
 </body>

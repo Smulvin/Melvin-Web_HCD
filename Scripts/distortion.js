@@ -113,3 +113,6 @@ window.addEventListener("resize", () => { updateDistorter(); wrapWords(); });
 
 // Initial setup
 updateDistorter();
+
+
+

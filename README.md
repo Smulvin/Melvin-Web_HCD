@@ -287,3 +287,7 @@ Vandaag werkte ik thuis omdat het lokaal bezet was. Als eerste wilde ik werken o
 
 #### Checkout met Dylan
 Omdat Dylan makkelijk voor mij te bereiken was en ik wist dat hij ook thuis werkte, hadden we onze checkout samen online gedaan. Dylan heeft vandaag vooral gewerkt aan het netjes maken van zijn javascript, hij heeft het opgedeeld in 2 verschillende scripts voor overzicht. Voor de rest is hij bezig geweest met het goed maken voor screenreaders dat teksten correct worden voorgelezen en dat je met de pijltjestoetsen je personage kan bewegen op het grid.
+
+### Dag 5: Dinsdag 14 - 4 - 2026
+
+#### Testen met Roger
