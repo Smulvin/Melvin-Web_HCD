@@ -289,5 +289,25 @@ Vandaag werkte ik thuis omdat het lokaal bezet was. Als eerste wilde ik werken o
 Omdat Dylan makkelijk voor mij te bereiken was en ik wist dat hij ook thuis werkte, hadden we onze checkout samen online gedaan. Dylan heeft vandaag vooral gewerkt aan het netjes maken van zijn javascript, hij heeft het opgedeeld in 2 verschillende scripts voor overzicht. Voor de rest is hij bezig geweest met het goed maken voor screenreaders dat teksten correct worden voorgelezen en dat je met de pijltjestoetsen je personage kan bewegen op het grid.
 
 ### Dag 5: Dinsdag 14 - 4 - 2026
+Vandaag begon ik vanuit huis en ben daarna naar school gegaan voor de test met Roger. Thuis heb ik gewerkt aan het verbeteren van de toegankelijkheid van mijn website. Als eerste heb ik gewerkt dat de screenreader bepaalde teksten zegt zodra knoppen zijn ingedrukt, zoals: "Annotatie opgeslagen" of "Annotatie verwijderd". Ik hoop dat het hierdoor altijd duidelijk is welke actie ondernomen is. Voor de rest heb ik nog geprobeerd om de fixen dat de taal goed werkt op mijn website, omdat ik Nederlands en Engels gebruik. Tot nu toe klonk het Engelse steeds niet goed. Ik probeerde het met het lang attribute, maar kreeg het niet werkend. Na wat onderzoek en vragen aan ChatGPT kwam ik erachter dat ik echt los de Engelse taal geinstalleerd moet hebben op mijn laptop. Dat installeren duurde vrij lang. Daarna wilde het alleen nog steeds niet werken. Na nog een keer aan ChatGPT vragen bleek dat het lag aan het feit dat ik lang="en" had staan en ik moest lang="en-GB" hebben, omdat ik specifiek de Verenigd Koningrijk taal had geïnstalleerd. Op aanrader van Vasilis had ik ook nog even kort een beetje code geschreven om het lettertype aan te passen op de website. Puur om even snel te kijken wat Roger fijner vindt.
 
 #### Testen met Roger
+In het algemeen, heeft Roger wel eens het probleem dat hij niet weet of de functionaliteit er niet is, of dat het aan zijn eigen kunnen ligt.
+
+##### Andere testen
+Fijn om zelf sneltoetsen te kunnen kiezen. Makkelijker te onthouden.<br>
+Moet altijd duidelijk zijn waar de focus is op de website.<br>
+Rood met zwart contrast kan Roger moeilijk lezen.<br>
+Op telefoon is er vaak geklungel om teksten te lezen, kan interessant zijn om onderzoek naar te doen. Maar boeken lezen is niet het enige klungeligge op telefoon. <br>
+Enter is een logische knop om een annotatie te maken. Escape om terug te gaan? <br>
+Vindt het fijn dat je eventueel kan filteren als je echt veel annotaties hebt. <br>
+
+##### Mijn test
+Sneltoetsen werkten opeens niet goed? Even naar kijken, ik had hem voor de test veranderd naar z en x, maar werkten niet tijdens de test. Dus terug veranderd. <br>
+Je kan wel naar annotaties switchem, maar gaat niet makkelijk terug, alleen met tab, maar dan moet je de hele website weer door <br>
+Als je klaar bent met het schrijven van een annotatie, gaat de focus ook niet meer terug naar de alinea waar je mee bezig was. <br>
+Lettertype maakt hem echt niet uit, zolang het maar niet heel fancy is en dikgedrukt is, hij heeft met elk lettertype namelijk altijd wel een beetje moeite, maar is fijn als dat er een lijstje is om uit te kiezen, maar Verdana kent hij en gebruikt hij wel vaker <br>
+Hij vroeg of er nog een optie was om de annotaties makkelijk te sorteren, ik had gezegd dat dat er nog niet in zat, dat het idee was dat het alleen een lijst was. Want de annotatie zit al op dezelfde hoogte als de alinea waar het over gaat. <br>
+Hij vond de styling wel heel fijn met het grijs en het geel. Misschien dat ik wel nog even wat meer witruimte standaard kan geven tussen tekst en annotatie. <br>
+Waarschijnlijk zou hij geen gebruik van de blinde vlek functie, maar hij vindt het een leuk extraatje, maar inderdaad handig als je hem uit kan zetten <br>
+Screenreader focus slaat de h1 en h2 op het moment nog over, hij gaat meteen naar de eerste alinea. <br>
