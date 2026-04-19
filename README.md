@@ -310,4 +310,7 @@ Lettertype maakt hem echt niet uit, zolang het maar niet heel fancy is en dikged
 Hij vroeg of er nog een optie was om de annotaties makkelijk te sorteren, ik had gezegd dat dat er nog niet in zat, dat het idee was dat het alleen een lijst was. Want de annotatie zit al op dezelfde hoogte als de alinea waar het over gaat. <br>
 Hij vond de styling wel heel fijn met het grijs en het geel. Misschien dat ik wel nog even wat meer witruimte standaard kan geven tussen tekst en annotatie. <br>
 Waarschijnlijk zou hij geen gebruik van de blinde vlek functie, maar hij vindt het een leuk extraatje, maar inderdaad handig als je hem uit kan zetten <br>
-Screenreader focus slaat de h1 en h2 op het moment nog over, hij gaat meteen naar de eerste alinea. <br>
+Screenreader focus slaat de h1 en h2 op het moment nog over, hij gaat meteen naar de eerste alinea.
+
+### Weekverslag
+Deze week ben ik vooral gaan focussen op het echt beter maken van de screenreader werking. Ik heb dus focus gelegd op dat de teksten correct worden voorgelezen en dat je annotaties kan maken. Ik kwam er tijdens de test wel achter dat er nog wel een paar fouten zitten in de volgorde als het gaat om de annotaties. Daar kan ik nog wel echt dingen in verbeteren. Voor de rest vond Roger de stijl al goed en had hij aangegeven welk lettertype en toetsen hij dan het beste zou vinden. Daar ga ik dan dus wat dingen op veranderen. Ook vond hij de styling al goed, maar ik denk dat ik nog wel wat puntjes op de i zou kunnen zetten om het nog net iets meer te verbeteren.
