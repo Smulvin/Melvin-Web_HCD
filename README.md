@@ -314,3 +314,15 @@ Screenreader focus slaat de h1 en h2 op het moment nog over, hij gaat meteen naa
 
 ### Weekverslag
 Deze week ben ik vooral gaan focussen op het echt beter maken van de screenreader werking. Ik heb dus focus gelegd op dat de teksten correct worden voorgelezen en dat je annotaties kan maken. Ik kwam er tijdens de test wel achter dat er nog wel een paar fouten zitten in de volgorde als het gaat om de annotaties. Daar kan ik nog wel echt dingen in verbeteren. Voor de rest vond Roger de stijl al goed en had hij aangegeven welk lettertype en toetsen hij dan het beste zou vinden. Daar ga ik dan dus wat dingen op veranderen. Ook vond hij de styling al goed, maar ik denk dat ik nog wel wat puntjes op de i zou kunnen zetten om het nog net iets meer te verbeteren.
+
+## Week 4
+
+### Lijstje voor laatste dagen
+- Betere screenreader navigatie (niet hele tijd hele URL balk door hoeven lopen)
+- Screenreader leest nog niet alles voor
+- Styling iets mooier en netter maken
+- Meer de identiteit van Roger toevoegen
+
+### Dag 6: Maandag 20 - 4 - 2026
+Vandaag had ik eerst even een kort dingetje gedaan met het fixen dat de h1 en h2 ook met tab te vinden zijn. Dat waren ze namelijk eerst nog niet. Daarna had ik wat logica geschreven dat als je een annotatie maakt dat de focus dan terug gaat naar de paragraaf waar de annotatie over ging. Dat duurde iets langer dan verwacht, maar lukte uiteindelijk wel. Daarna voor de afwisseling ben ik wat styling gaan doen. Ik vond het nog een beetje rommelig en niet netjes staan. Daarbij wilde ik ook nog wat meer focus hebben op waar de focus ligt. Ik heb daarna dus ook meteen gewerkt aan dat systeem, dat je makkelijk tussen de tekst en annotaties kan switchen en dat je dan door je gemaakt annotaties makkelijk kan gaan. Dit was alleen wat moeilijker dan gedacht, later bleek dat ik het mezelf gewoon te moeilijk probeerde te maken. Ik moest wat meer vertrouwen op de functionaliteiten van de screenreader zelf. Als laatste had ik mijn controlepaneel nog een andere kleur gegeven omdat Roger had gezegd dat zwart en rood contrast hij niet fijn vond.
+<img src="Assets/README_imgs/Iteratie3_Styling.png" alt="Tekst vak en annotatie worden goed aangegeven met een kader en andere achtergrond kleur">

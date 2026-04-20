@@ -6,7 +6,9 @@
 
 :root {
   --dark-grey: #2E2E2E;
-  --normal-grey: #797979;
+  --normal-grey: #2a2a2a;
+  --light-grey: #797979;
+  --focus-grey: #4B4B4B;
   --yellow: #FFD400;
 }
 
@@ -21,7 +23,8 @@ body {
 
 main {
   display: flex;
-  padding: 5em;
+  padding:  6em 2em;
+  gap: 2em;
 
 }
 
@@ -33,21 +36,28 @@ h5,
 h6 {
   margin-bottom: 1em;
   line-height: 1.6em;
-
 }
 
 .text {
   max-width: 70%;
-  margin: 50px auto;
+  margin: 0 auto;
   line-height: 1.6em;
   position: relative;
   color: var(--yellow);
+  background: var(--normal-grey);
+  padding: 1em;
 
   p {
     font-size: 1.2rem;
     line-height: 2.2em;
-    margin-bottom: 4em;
     font-weight: bold;
+  }
+
+  ;
+
+  p:not(:last-child) {
+    margin-bottom: 4em;
+
   }
 }
 
@@ -73,23 +83,16 @@ form#distortion-menu {
   display: flex;
   top: 10px;
   left: 10px;
-  background: red;
+  background: lightblue;
   border-radius: 10px;
-  color: white;
+  font-weight: bold;
+  color: black;
   padding: 1em;
   z-index: 1000;
 
   label {
     margin: 0 1em;
   }
-}
-
-form#anno-menu {
-  width: 25em;
-  background: lime;
-  border-radius: 10px;
-  padding: 1em;
-  /* display: none; */
 }
 
 label {
@@ -120,8 +123,8 @@ label {
   position: relative;
   overflow: visible;
   display: block;
-
-  min-height: 100vh;
+  background: var(--normal-grey);
+  padding: 1em;
 
   h2 {
     position: sticky;
@@ -134,14 +137,14 @@ label {
   width: 100%;
 }
 
-.annotation-item, .anno-new {
-  background: var(--normal-grey);
+.annotation-item,
+.anno-new {
+  background: var(--light-grey);
   padding: 1em;
   margin-bottom: 1em;
   border-radius: 5px;
   font-size: 1.2em;
   font-weight: bold;
-  transform: translateY(-50%);
   width: 100%;
   z-index: 2;
 }
@@ -160,4 +163,11 @@ button {
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
+}
+
+.mode-active {
+    outline: 4px solid #4c9ffe;
+    outline-offset: 6px;
+    border-radius: 8px;
+    background: var(--focus-grey);
 }

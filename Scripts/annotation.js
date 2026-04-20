@@ -1,44 +1,96 @@
 const paragraphs = Array.from(document.querySelectorAll(".text p"));
 const annotationPanel = document.querySelector(".annotations");
+const textPanel = document.getElementById("introduction");
 const annoContext = document.getElementById("anno-context");
 const status = document.getElementById("anno-status");
 
-// Paragraph setup
 let currentParagraph = null;
+let mode = "text";
+let annotationItems = [];
+let activeAnnotationIndex = -1;
 
-// give each paragraph a stable ID
+// Give each paragraph a stable ID
 paragraphs.forEach((p, i) => {
     p.dataset.paraId = i;
-    p.tabIndex = 0;
-
-    p.addEventListener("focus", () => {
-        setCurrentParagraph(p);
-    });
-
-    p.addEventListener("click", () => {
-        setCurrentParagraph(p);
-    });
+    p.addEventListener("focus", () => setCurrentParagraph(p));
 });
 
-// Annotation storage
+// Storage
 const annotations =
     JSON.parse(localStorage.getItem("annotations")) || {};
 
-// Tracking current paragraph
+function saveAnnotations() {
+    localStorage.setItem("annotations", JSON.stringify(annotations));
+}
+
+// Track current paragraph
 function setCurrentParagraph(p) {
     currentParagraph = p;
 }
 
-// 🔊 Live region helper
+// Accessibility announcement
 function announce(message) {
     status.textContent = "";
-
-    setTimeout(() => {
+    requestAnimationFrame(() => {
         status.textContent = message;
-    }, 50);
+    });
 }
 
-// Fallback: paragraph closest to viewport top
+// MODE SWITCH
+function setMode(nextMode) {
+    mode = nextMode;
+
+    textPanel.classList.remove("mode-active");
+    annotationPanel.classList.remove("mode-active");
+
+    if (mode === "text") {
+        textPanel.classList.add("mode-active");
+        announce("Focus op tekst");
+    } else {
+        annotationPanel.classList.add("mode-active");
+        announce("Focus op annotaties");
+
+        refreshAnnotationItems();
+        activeAnnotationIndex = -1;
+    }
+
+    updateTextColors();
+}
+
+// Collect annotation items
+function refreshAnnotationItems() {
+    annotationItems = Array.from(
+        document.querySelectorAll(".annotation-item")
+    );
+}
+
+// 🔥 FIXED: stable focus system (no stale index dependency)
+function getAnnotationItems() {
+    return Array.from(document.querySelectorAll(".annotation-item"));
+}
+
+function focusAnnotation(index) {
+    const items = getAnnotationItems();
+    if (!items.length) return;
+
+    activeAnnotationIndex =
+        (index + items.length) % items.length;
+
+    const item = items[activeAnnotationIndex];
+    if (!item) return;
+
+    item.focus();
+    item.scrollIntoView({ block: "center", behavior: "smooth" });
+
+    const heading =
+        item.querySelector(".anno-heading")?.textContent || "Annotatie";
+
+    const text =
+        item.querySelector(".anno-text")?.textContent || "";
+
+}
+
+// Track visible paragraph fallback
 function getVisibleParagraph() {
     let closest = null;
     let minDistance = Infinity;
@@ -56,7 +108,7 @@ function getVisibleParagraph() {
     return closest;
 }
 
-// Render saved annotations
+// Render annotations (NO scroll-triggered rerender anymore)
 function renderAnnotations() {
     const list = document.getElementById("anno-list");
     list.innerHTML = "";
@@ -74,45 +126,40 @@ function renderAnnotations() {
         const item = clone.querySelector(".annotation-item");
 
         item.dataset.id = id;
-        item.tabIndex = 0;
-
         item.style.position = "absolute";
         item.style.top = `${rect.top + scrollTop}px`;
 
-        // Fill content
         clone.querySelector(".anno-heading").textContent =
             anno.heading || "Alinea";
 
         clone.querySelector(".anno-text").textContent =
             anno.text;
 
-        // Buttons
         const deleteBtn = clone.querySelector(".delete-btn");
         const editBtn = clone.querySelector(".edit-btn");
 
         deleteBtn.addEventListener("click", (e) => {
             e.stopPropagation();
-
             delete annotations[id];
             saveAnnotations();
             renderAnnotations();
-
             announce("Annotatie verwijderd");
         });
 
         editBtn.addEventListener("click", (e) => {
             e.stopPropagation();
-
             openAnnotationForParagraph(p, id, item);
         });
 
         list.appendChild(item);
     });
+
+    refreshAnnotationItems();
 }
 
 renderAnnotations();
 
-// Open annotation UI
+// OPEN annotation UI
 function openAnnotationForParagraph(p, editId = null, existingItem = null) {
     const h4 =
         p.previousElementSibling?.tagName === "H4"
@@ -133,20 +180,12 @@ function openAnnotationForParagraph(p, editId = null, existingItem = null) {
     headingEl.textContent = sectionName;
     textarea.value = existing ? existing.text : "";
 
-    // ✅ Better accessibility (on textarea)
-    textarea.setAttribute(
-        "aria-label",
-        `Annotatie maken ${sectionName}`
-    );
-
     let container;
 
     if (existingItem) {
-        // ✏️ EDIT MODE → replace existing annotation
         container = existingItem;
         container.innerHTML = "";
     } else {
-        // ➕ NEW MODE
         container = document.createElement("div");
         container.className = "anno-new";
 
@@ -161,10 +200,12 @@ function openAnnotationForParagraph(p, editId = null, existingItem = null) {
 
     container.appendChild(clone);
 
-    // focus
-    setTimeout(() => textarea.focus(), 50);
+    textarea.focus();
 
-    // SAVE
+    setMode("annotations");
+
+    announce(`Annotatie maken voor ${sectionName}`);
+
     saveBtn.addEventListener("click", () => {
         const text = textarea.value.trim();
         if (!text) return;
@@ -179,28 +220,72 @@ function openAnnotationForParagraph(p, editId = null, existingItem = null) {
         saveAnnotations();
         renderAnnotations();
 
-        // announce
-        const message = editId
-            ? "Annotatie bijgewerkt"
-            : "Annotatie opgeslagen";
+        setMode("text");
 
-        announce(message);
-
-        // return focus to updated annotation
         setTimeout(() => {
-            const updated = document.querySelector(`[data-id="${id}"]`);
-            if (updated) updated.focus();
+            const paragraph = document.querySelector(`[data-para-id="${id}"]`);
+            if (paragraph) {
+                paragraph.focus();
+                paragraph.scrollIntoView({ block: "center" });
+                announce(editId ? "Annotatie bijgewerkt" : "Annotatie opgeslagen");
+            }
         }, 100);
     });
 }
 
-function saveAnnotations() {
-    localStorage.setItem("annotations", JSON.stringify(annotations));
+// TEXT COLOR UPDATE
+function updateTextColors() {
+    textPanel.style.color =
+        mode === "text" ? "var(--focus-grey)" : "red";
 }
 
-// Keyboard shortcut → create annotation
+// Utility
+function isTypingInField(target) {
+    const tag = target.tagName.toLowerCase();
+    return (
+        tag === "input" ||
+        tag === "textarea" ||
+        target.isContentEditable
+    );
+}
+
+// MODE TOGGLE (ALT + Z)
 document.addEventListener("keydown", (e) => {
-    if (e.altKey && e.key.toLowerCase() === "a") {
+    if (isTypingInField(e.target)) return;
+
+    if (e.altKey && !e.shiftKey && !e.ctrlKey && e.key.toLowerCase() === "z") {
+        e.preventDefault();
+
+        const goingToAnnotations = mode === "text";
+        setMode(goingToAnnotations ? "annotations" : "text");
+
+        const target = goingToAnnotations
+            ? annotationPanel
+            : textPanel;
+
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+
+        setTimeout(() => {
+            const focusable =
+                target.querySelector("h1, h2, h3, [tabindex], button");
+            focusable?.focus?.();
+        }, 150);
+
+        if (goingToAnnotations) {
+            const firstItem = document.querySelector(".annotation-item");
+            if (firstItem) {
+                firstItem.focus();
+                activeAnnotationIndex = 0;
+            }
+        }
+    }
+});
+
+// CREATE ANNOTATION (ALT + X)
+document.addEventListener("keydown", (e) => {
+    if (isTypingInField(e.target)) return;
+
+    if (e.altKey && !e.shiftKey && !e.ctrlKey && e.key.toLowerCase() === "x") {
         e.preventDefault();
 
         const target =
@@ -212,21 +297,30 @@ document.addEventListener("keydown", (e) => {
     }
 });
 
-// Keyboard shortcut → jump to annotations
 document.addEventListener("keydown", (e) => {
-    if (e.altKey && e.shiftKey && e.key.toLowerCase() === "a") {
-        e.preventDefault();
+    if (mode !== "annotations") return;
 
-        document.querySelector(".annotations")
-            .scrollIntoView({ behavior: "smooth" });
+    // Only navigate BETWEEN annotation cards
+    if (!["ArrowDown", "ArrowUp"].includes(e.key)) return;
 
-        setTimeout(() => {
-            const firstItem = document.querySelector(".annotation-item");
-            if (firstItem) firstItem.focus();
-        }, 200);
-    }
+    const items = getAnnotationItems();
+    if (!items.length) return;
+
+    const activeIndex = items.indexOf(
+        document.activeElement.closest(".annotation-item")
+    );
+
+    if (activeIndex === -1) return;
+
+    e.preventDefault();
+
+    const nextIndex =
+        e.key === "ArrowDown"
+            ? activeIndex + 1
+            : activeIndex - 1;
+
+    focusAnnotation(nextIndex);
 });
 
-// Keep positions correct
-window.addEventListener("resize", renderAnnotations);
-window.addEventListener("scroll", renderAnnotations);
+// INIT
+setMode("text");
