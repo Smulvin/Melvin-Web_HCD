@@ -34,7 +34,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin-bottom: 1em;
+  margin: 1em 0;
   line-height: 1.6em;
 }
 
@@ -55,9 +55,8 @@ h6 {
 
   ;
 
-  p:not(:last-child) {
+  p:not(:last-child):not(.explanation) {
     margin-bottom: 4em;
-
   }
 }
 
@@ -141,18 +140,11 @@ label {
 .anno-new {
   background: var(--light-grey);
   padding: 1em;
-  margin-bottom: 1em;
   border-radius: 5px;
   font-size: 1.2em;
   font-weight: bold;
   width: 100%;
   z-index: 2;
-}
-
-#anno-editor-anchor {
-  position: absolute;
-  left: 0;
-  width: 100%;
 }
 
 button {

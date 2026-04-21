@@ -152,7 +152,7 @@ Vandaag was ik begonnen met het maken van het annotatie menu. Dit probeerde ik e
 - Tegen wat voor dingen loop je tegenaan op die websites?
 - Bezoek je websites vaker op je telefoon of op een desktop?
 
-#### Aantekningen Test met Roger Rafelli
+#### Aantekningen Test met Roger Ravelli
 - 59 jaar oud, 43 toen eerste symptomen kreeg
 - Werktuigbouwkunde achtergrond
 - erfelike versie van macula degeneratie, niet geneesbaar
@@ -329,3 +329,20 @@ Vandaag had ik eerst even een kort dingetje gedaan met het fixen dat de h1 en h2
 
 #### Checkout met Alex
 Het was vandaag heel rustig, dus ik had maar gewoon iemand uitgekozen om de checkout mee te doen. Deze keer was dat Alex. Er kwam niet heel veel uit dit gesprek. Ik had verteld wat ik vandaag had gedaan en over wat ik nog wil toevoegen. Dat is voornamelijk nog een beetje de keyboard functionaliteit verbeteren en nog iets waarmee ik de identiteit van Roger kan toevoegen aan mijn ontwerp. Maar daar kan ik misschien beter morgen aan Roger zelf wat over vragen.
+
+### Dag 7: Dinsdag 21 - 4 - 2026
+Vandaag was ik begonnen met het toevoegen van een stukje tekst voor het uitleggen van de sneltoetsen. Dit was uiteraard snel gedaan en ook niet per se nodig, want ik kan aan Roger de sneltoetsen ook gewoon vertellen. Maar het helpt toch tijdens de test wat meer voor dat hij er dan volledig zelfstandig door heen zou kunnen gaan. Daarna ben ik een tijdje bezig geweest met het ervoor zorgen dat annotaties die juiste hoogte krijgen aan de hand van de alinea waar ze over gaan. Het duurde even voordat ik dit netjes had. Daarna wilde ik nog iets van Roger zijn identiteit toevoegen. Vasilis had het er al over dat Roger iets met beeldhouwen deed en dat ik kon ik online ook terugvinden. Dylan kwam toen met het idee om misschien gewoon soundeffects toe te voegen. Voor nu heb ik één soundeffect toegevoegd van een hamer zodra je een annotatie maakt, dit kan ik zo even testen met Roger en vragen of hij dit een leuk idee vind. Dan kan ik namelijk er meer toevoegen. ALs hij het niks vind kan ik altijd ook vragen wat hij dan wel leuke ideeën lijkt. Daarna was ik ook nog weer even bezig om de tab logica te fixen. Voornamelijk ook voor als je switched tussen de tekst en de annotaties. Als je nu van text naar annotaties gaat, en je hebt al een annotatie op die paragraaf, dan focust hij meteen die annotatie. Anders focust hij gewoon de eerst annotatie die je hebt gemaakt. En als je dan van annotaties weer teruggaat naar de tekst, dan gaat hij terug naar de paragraaf waar je vandaag kwam. Dit zei Roger namelijk dat hij dit fijn zou vinden.
+
+#### Bronnen
+https://www.youtube.com/watch?v=miLY0Y9yUa8
+
+#### Vragen voor Roger
+- Lijkt het je een leuk idee om soundeffecten toe te voegen om jou identiteit erin te verwerken
+- Wat lijken je andere mogelijkheden om identiteit erin te verwerken.
+
+#### Testen met Roger
+
+##### Anders Tests
+
+
+##### Mijn test

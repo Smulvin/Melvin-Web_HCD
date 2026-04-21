@@ -1,18 +1,25 @@
 const paragraphs = Array.from(document.querySelectorAll(".text p"));
 const annotationPanel = document.querySelector(".annotations");
 const textPanel = document.getElementById("introduction");
-const annoContext = document.getElementById("anno-context");
 const status = document.getElementById("anno-status");
 
 let currentParagraph = null;
+let lastFocusedParagraph = null;
 let mode = "text";
 let annotationItems = [];
 let activeAnnotationIndex = -1;
 
+// 🔥 NEW: controls auto-focus behavior when entering annotation mode
+let focusOnEnterAnnotations = true;
+
 // Give each paragraph a stable ID
 paragraphs.forEach((p, i) => {
     p.dataset.paraId = i;
-    p.addEventListener("focus", () => setCurrentParagraph(p));
+
+    p.addEventListener("focus", () => {
+        setCurrentParagraph(p);
+        lastFocusedParagraph = p;
+    });
 });
 
 // Storage
@@ -23,14 +30,11 @@ function saveAnnotations() {
     localStorage.setItem("annotations", JSON.stringify(annotations));
 }
 
-// Track current paragraph
 function setCurrentParagraph(p) {
     currentParagraph = p;
 }
 
-// Accessibility announcement
 function announce(message) {
-    status.textContent = "";
     requestAnimationFrame(() => {
         status.textContent = message;
     });
@@ -45,16 +49,83 @@ function setMode(nextMode) {
 
     if (mode === "text") {
         textPanel.classList.add("mode-active");
-        announce("Focus op tekst");
+
+        requestAnimationFrame(() => {
+            const target =
+                lastFocusedParagraph ||
+                currentParagraph ||
+                document.querySelector(".text p");
+
+            if (!target) return;
+
+            target.setAttribute("tabindex", "0");
+            target.focus();
+
+            currentParagraph = target;
+
+            target.scrollIntoView({
+                block: "center",
+                behavior: "smooth"
+            });
+        });
     } else {
         annotationPanel.classList.add("mode-active");
-        announce("Focus op annotaties");
 
         refreshAnnotationItems();
         activeAnnotationIndex = -1;
+
+        requestAnimationFrame(() => {
+            const items = getAnnotationItems();
+
+            // 🔥 NEW: skip auto-focus if coming from Alt+X
+            if (!focusOnEnterAnnotations) {
+                focusOnEnterAnnotations = true; // reset for next time
+                return;
+            }
+
+            const targetParagraph =
+                lastFocusedParagraph ||
+                currentParagraph;
+
+            // no annotations at all
+            if (items.length === 0) {
+                announce("Nog geen annotatie gemaakt");
+                return;
+            }
+
+            const found = focusAnnotationByParagraph(targetParagraph);
+
+            // fallback
+            if (!found) {
+                const first = document.querySelector(".annotation-item");
+
+                if (first) {
+                    first.setAttribute("tabindex", "0");
+                    first.focus();
+                    activeAnnotationIndex = 0;
+                }
+            }
+        });
     }
 
     updateTextColors();
+}
+
+// 🔥 Focus annotation belonging to paragraph
+function focusAnnotationByParagraph(p) {
+    if (!p) return false;
+
+    const id = p.dataset.paraId;
+    const items = getAnnotationItems();
+
+    const index = items.findIndex(el => el.dataset.id === id);
+
+    if (index !== -1) {
+        focusAnnotation(index);
+        return true;
+    }
+
+    return false;
 }
 
 // Collect annotation items
@@ -64,7 +135,6 @@ function refreshAnnotationItems() {
     );
 }
 
-// 🔥 FIXED: stable focus system (no stale index dependency)
 function getAnnotationItems() {
     return Array.from(document.querySelectorAll(".annotation-item"));
 }
@@ -81,16 +151,9 @@ function focusAnnotation(index) {
 
     item.focus();
     item.scrollIntoView({ block: "center", behavior: "smooth" });
-
-    const heading =
-        item.querySelector(".anno-heading")?.textContent || "Annotatie";
-
-    const text =
-        item.querySelector(".anno-text")?.textContent || "";
-
 }
 
-// Track visible paragraph fallback
+// fallback visible paragraph
 function getVisibleParagraph() {
     let closest = null;
     let minDistance = Infinity;
@@ -108,26 +171,42 @@ function getVisibleParagraph() {
     return closest;
 }
 
-// Render annotations (NO scroll-triggered rerender anymore)
+function getVisualCenterY(el) {
+    const range = document.createRange();
+    range.selectNodeContents(el);
+
+    const rects = range.getClientRects();
+    if (!rects.length)
+        return el.getBoundingClientRect().top + window.scrollY;
+
+    const first = rects[0];
+    const last = rects[rects.length - 1];
+
+    return (first.top + last.bottom) / 2 + window.scrollY;
+}
+
+// =====================
+// RENDER ANNOTATIONS
+// =====================
 function renderAnnotations() {
     const list = document.getElementById("anno-list");
-    list.innerHTML = "";
-
     const template = document.getElementById("anno-item-template");
+
+    list.innerHTML = "";
 
     Object.entries(annotations).forEach(([id, anno]) => {
         const p = document.querySelector(`[data-para-id="${id}"]`);
         if (!p) return;
 
-        const rect = p.getBoundingClientRect();
-        const scrollTop = window.scrollY;
+        const y = getVisualCenterY(p);
 
         const clone = template.content.cloneNode(true);
         const item = clone.querySelector(".annotation-item");
 
         item.dataset.id = id;
         item.style.position = "absolute";
-        item.style.top = `${rect.top + scrollTop}px`;
+        item.style.top = `${y}px`;
+        item.style.transform = "translateY(-150%)";
 
         clone.querySelector(".anno-heading").textContent =
             anno.heading || "Alinea";
@@ -135,10 +214,7 @@ function renderAnnotations() {
         clone.querySelector(".anno-text").textContent =
             anno.text;
 
-        const deleteBtn = clone.querySelector(".delete-btn");
-        const editBtn = clone.querySelector(".edit-btn");
-
-        deleteBtn.addEventListener("click", (e) => {
+        clone.querySelector(".delete-btn").addEventListener("click", (e) => {
             e.stopPropagation();
             delete annotations[id];
             saveAnnotations();
@@ -146,12 +222,12 @@ function renderAnnotations() {
             announce("Annotatie verwijderd");
         });
 
-        editBtn.addEventListener("click", (e) => {
+        clone.querySelector(".edit-btn").addEventListener("click", (e) => {
             e.stopPropagation();
             openAnnotationForParagraph(p, id, item);
         });
 
-        list.appendChild(item);
+        list.appendChild(clone);
     });
 
     refreshAnnotationItems();
@@ -159,7 +235,9 @@ function renderAnnotations() {
 
 renderAnnotations();
 
-// OPEN annotation UI
+// =====================
+// OPEN ANNOTATION
+// =====================
 function openAnnotationForParagraph(p, editId = null, existingItem = null) {
     const h4 =
         p.previousElementSibling?.tagName === "H4"
@@ -188,26 +266,34 @@ function openAnnotationForParagraph(p, editId = null, existingItem = null) {
     } else {
         container = document.createElement("div");
         container.className = "anno-new";
-
-        const rect = p.getBoundingClientRect();
-        const scrollTop = window.scrollY;
-
-        container.style.position = "absolute";
-        container.style.top = `${rect.top + scrollTop}px`;
-
         document.getElementById("anno-list").appendChild(container);
     }
+
+    const y = getVisualCenterY(p);
+
+    container.style.position = "absolute";
+    container.style.top = `${y}px`;
+    container.style.transform = "translateY(-150%)";
 
     container.appendChild(clone);
 
     textarea.focus();
 
-    setMode("annotations");
+    // 🔥 IMPORTANT: ensure Alt+X does NOT auto-focus list
+    focusOnEnterAnnotations = false;
 
-    announce(`Annotatie maken voor ${sectionName}`);
+    setMode("annotations");
 
     saveBtn.addEventListener("click", () => {
         const text = textarea.value.trim();
+
+        const saveSound = new Audio("Assets/SFX/hammer.mp3");
+
+        announce("Annotatie opgeslagen");
+        saveSound.currentTime = 0;
+        saveSound.volume = 0.1;
+        saveSound.play();
+
         if (!text) return;
 
         const id = editId ?? p.dataset.paraId;
@@ -227,65 +313,46 @@ function openAnnotationForParagraph(p, editId = null, existingItem = null) {
             if (paragraph) {
                 paragraph.focus();
                 paragraph.scrollIntoView({ block: "center" });
-                announce(editId ? "Annotatie bijgewerkt" : "Annotatie opgeslagen");
             }
         }, 100);
     });
 }
 
-// TEXT COLOR UPDATE
+// =====================
+// UI
+// =====================
 function updateTextColors() {
     textPanel.style.color =
         mode === "text" ? "var(--focus-grey)" : "red";
 }
 
-// Utility
 function isTypingInField(target) {
     const tag = target.tagName.toLowerCase();
-    return (
-        tag === "input" ||
-        tag === "textarea" ||
-        target.isContentEditable
-    );
+    return tag === "input" || tag === "textarea" || target.isContentEditable;
 }
 
-// MODE TOGGLE (ALT + Z)
+// MODE TOGGLE
 document.addEventListener("keydown", (e) => {
     if (isTypingInField(e.target)) return;
 
-    if (e.altKey && !e.shiftKey && !e.ctrlKey && e.key.toLowerCase() === "z") {
+    if (e.altKey && e.key.toLowerCase() === "z") {
         e.preventDefault();
 
         const goingToAnnotations = mode === "text";
         setMode(goingToAnnotations ? "annotations" : "text");
 
-        const target = goingToAnnotations
-            ? annotationPanel
-            : textPanel;
+        const target =
+            goingToAnnotations ? annotationPanel : textPanel;
 
         target.scrollIntoView({ behavior: "smooth", block: "start" });
-
-        setTimeout(() => {
-            const focusable =
-                target.querySelector("h1, h2, h3, [tabindex], button");
-            focusable?.focus?.();
-        }, 150);
-
-        if (goingToAnnotations) {
-            const firstItem = document.querySelector(".annotation-item");
-            if (firstItem) {
-                firstItem.focus();
-                activeAnnotationIndex = 0;
-            }
-        }
     }
 });
 
-// CREATE ANNOTATION (ALT + X)
+// CREATE ANNOTATION
 document.addEventListener("keydown", (e) => {
     if (isTypingInField(e.target)) return;
 
-    if (e.altKey && !e.shiftKey && !e.ctrlKey && e.key.toLowerCase() === "x") {
+    if (e.altKey && e.key.toLowerCase() === "x") {
         e.preventDefault();
 
         const target =
@@ -293,14 +360,15 @@ document.addEventListener("keydown", (e) => {
 
         if (!target) return;
 
+        focusOnEnterAnnotations = false; // 🔥 KEY FIX
+
         openAnnotationForParagraph(target);
     }
 });
 
+// NAVIGATION
 document.addEventListener("keydown", (e) => {
     if (mode !== "annotations") return;
-
-    // Only navigate BETWEEN annotation cards
     if (!["ArrowDown", "ArrowUp"].includes(e.key)) return;
 
     const items = getAnnotationItems();
@@ -314,13 +382,23 @@ document.addEventListener("keydown", (e) => {
 
     e.preventDefault();
 
-    const nextIndex =
+    focusAnnotation(
         e.key === "ArrowDown"
             ? activeIndex + 1
-            : activeIndex - 1;
-
-    focusAnnotation(nextIndex);
+            : activeIndex - 1
+    );
 });
 
 // INIT
+function initAnnotations() {
+    requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+            renderAnnotations();
+        });
+    });
+}
+
+window.addEventListener("load", initAnnotations);
+window.addEventListener("resize", renderAnnotations);
+
 setMode("text");
