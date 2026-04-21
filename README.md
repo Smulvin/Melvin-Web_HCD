@@ -253,21 +253,21 @@ Vandaag ben ik bezig geweest met het meer toegankelijk maken van mijn design. Di
 - Is er een lettertype dat u graag gebruikt? Zoals er ook eentje is voor Dyslexie
 
 #### Testen met Roger
-Roger had zijn laptop weer niet mee, dus hij liet hij wat dingen op zijn mobiel zien van hoe hij boeken probeert te lezen op mobiel.<br>
-Heeft een probleem met dingen navigeren op mobiel. Hij heeft ook niet altijd zijn laptop mee. Dus wilt hem ook liever op mobiel <br>
-Wilt een tooltje op mobiel om goed en makkelijk te lezen maar dus ook aantekeningen te maken, heeft een draadloos toetsenbordje<br>
-Per bladzijde een annotatie willen maken, en dus dan ook weer makkelijk terug willen kunnen vinden.<br>
+- Roger had zijn laptop weer niet mee, dus hij liet hij wat dingen op zijn mobiel zien van hoe hij boeken probeert te lezen op mobiel.
+- Heeft een probleem met dingen navigeren op mobiel. Hij heeft ook niet altijd zijn laptop mee. Dus wilt hem ook liever op mobiel 
+- Wilt een tooltje op mobiel om goed en makkelijk te lezen maar dus ook aantekeningen te maken, heeft een draadloos toetsenbordje.
+- Per bladzijde een annotatie willen maken, en dus dan ook weer makkelijk terug willen kunnen vinden.
 
 ##### Uit andere testen
-Handig om een losse knop te hebben om naar je notaties te gaan<br>
-Heel fijn als je notities per alinea kan maken, maar dat hij dan dus ook voorleest over welke alinea je een aantekeningen aan het maken bent.<br>
-Moet of heel duidelijk visueel of audieel duidelijk zijn waar de focus ligt<br>
-Tis wel standaard dat je met tab door een tekst heen kan, en dan het liefst niet per zin. Want annotaties zijn het handigst per alinea <br>
-Losse letters in uitleg teksten zoals een "A" gaat een screenreader te snel doorheen dus dat hoor je minder goed. <br>
-Je kan in de screenreader iets instellen dat hij automatisch switched naar een andere stem. Daarvoor moet je meerdere stemmen installeren<br>
-Vaak maakt hij sporadisch een beetje aantekeningen<br>
-Zou fijn zijn als je annoaties ook nog een keer kan bewerken, liever ook bewerken dan 2 notities om hetzelfde blok<br>
-Een denk wolk iccontje is al genenog aan het begin van een zin om aan te geven dat die zin een annoatie heeft<br>
+- Handig om een losse knop te hebben om naar je notaties te gaan
+- Heel fijn als je notities per alinea kan maken, maar dat hij dan dus ook voorleest over welke alinea je een aantekeningen aan het maken bent.
+- Moet of heel duidelijk visueel of audieel duidelijk zijn waar de focus ligt
+- Tis wel standaard dat je met tab door een tekst heen kan, en dan het liefst niet per zin. Want annotaties zijn het handigst per alinea 
+- Losse letters in uitleg teksten zoals een "A" gaat een screenreader te snel doorheen dus dat hoor je minder goed. 
+- Je kan in de screenreader iets instellen dat hij automatisch switched naar een andere stem. Daarvoor moet je meerdere stemmen installeren
+- Vaak maakt hij sporadisch een beetje aantekeningen
+- Zou fijn zijn als je annoaties ook nog een keer kan bewerken, liever ook bewerken dan 2 notities om hetzelfde blok
+- Een denk wolk iccontje is al genenog aan het begin van een zin om aan te geven dat die zin een annoatie heeft
 
 
 ##### Mijn test
@@ -295,22 +295,22 @@ Vandaag begon ik vanuit huis en ben daarna naar school gegaan voor de test met R
 In het algemeen, heeft Roger wel eens het probleem dat hij niet weet of de functionaliteit er niet is, of dat het aan zijn eigen kunnen ligt.
 
 ##### Andere testen
-Fijn om zelf sneltoetsen te kunnen kiezen. Makkelijker te onthouden.<br>
-Moet altijd duidelijk zijn waar de focus is op de website.<br>
-Rood met zwart contrast kan Roger moeilijk lezen.<br>
-Op telefoon is er vaak geklungel om teksten te lezen, kan interessant zijn om onderzoek naar te doen. Maar boeken lezen is niet het enige klungeligge op telefoon. <br>
-Enter is een logische knop om een annotatie te maken. Escape om terug te gaan? <br>
-Vindt het fijn dat je eventueel kan filteren als je echt veel annotaties hebt. <br>
+- Fijn om zelf sneltoetsen te kunnen kiezen. Makkelijker te onthouden
+- Moet altijd duidelijk zijn waar de focus is op de website.
+- Rood met zwart contrast kan Roger moeilijk lezen.
+- Op telefoon is er vaak geklungel om teksten te lezen, kan interessant zijn om onderzoek naar te doen. Maar boeken lezen is niet het enige klungeligge op telefoon.
+- Enter is een logische knop om een annotatie te maken. Escape om terug te gaan?
+- Vindt het fijn dat je eventueel kan filteren als je echt veel annotaties hebt.
 
 ##### Mijn test
-Sneltoetsen werkten opeens niet goed? Even naar kijken, ik had hem voor de test veranderd naar z en x, maar werkten niet tijdens de test. Dus terug veranderd. <br>
-Je kan wel naar annotaties switchem, maar gaat niet makkelijk terug, alleen met tab, maar dan moet je de hele website weer door <br>
-Als je klaar bent met het schrijven van een annotatie, gaat de focus ook niet meer terug naar de alinea waar je mee bezig was. <br>
-Lettertype maakt hem echt niet uit, zolang het maar niet heel fancy is en dikgedrukt is, hij heeft met elk lettertype namelijk altijd wel een beetje moeite, maar is fijn als dat er een lijstje is om uit te kiezen, maar Verdana kent hij en gebruikt hij wel vaker <br>
-Hij vroeg of er nog een optie was om de annotaties makkelijk te sorteren, ik had gezegd dat dat er nog niet in zat, dat het idee was dat het alleen een lijst was. Want de annotatie zit al op dezelfde hoogte als de alinea waar het over gaat. <br>
-Hij vond de styling wel heel fijn met het grijs en het geel. Misschien dat ik wel nog even wat meer witruimte standaard kan geven tussen tekst en annotatie. <br>
-Waarschijnlijk zou hij geen gebruik van de blinde vlek functie, maar hij vindt het een leuk extraatje, maar inderdaad handig als je hem uit kan zetten <br>
-Screenreader focus slaat de h1 en h2 op het moment nog over, hij gaat meteen naar de eerste alinea.
+- Sneltoetsen werkten opeens niet goed? Even naar kijken, ik had hem voor de test veranderd naar z en x, maar werkten niet tijdens de test. Dus terug veranderd. 
+- Je kan wel naar annotaties switchem, maar gaat niet makkelijk terug, alleen met tab, maar dan moet je de hele website weer door 
+- Als je klaar bent met het schrijven van een annotatie, gaat de focus ook niet meer terug naar de alinea waar je mee bezig was.
+- Lettertype maakt hem echt niet uit, zolang het maar niet heel fancy is en dikgedrukt is, hij heeft met elk lettertype namelijk altijd wel een beetje moeite, maar is fijn als dat er een lijstje is om uit te kiezen, maar Verdana kent hij en gebruikt hij wel vaker
+- Hij vroeg of er nog een optie was om de annotaties makkelijk te sorteren, ik had gezegd dat dat er nog niet in zat, dat het idee was dat het alleen een lijst was. Want de annotatie zit al op dezelfde hoogte als de alinea waar het over gaat.
+- Hij vond de styling wel heel fijn met het grijs en het geel. Misschien dat ik wel nog even wat meer witruimte standaard kan geven tussen tekst en annotatie.
+- Waarschijnlijk zou hij geen gebruik van de blinde vlek functie, maar hij vindt het een leuk extraatje, maar inderdaad handig als je hem uit kan zetten
+- Screenreader focus slaat de h1 en h2 op het moment nog over, hij gaat meteen naar de eerste alinea.
 
 ### Weekverslag
 Deze week ben ik vooral gaan focussen op het echt beter maken van de screenreader werking. Ik heb dus focus gelegd op dat de teksten correct worden voorgelezen en dat je annotaties kan maken. Ik kwam er tijdens de test wel achter dat er nog wel een paar fouten zitten in de volgorde als het gaat om de annotaties. Daar kan ik nog wel echt dingen in verbeteren. Voor de rest vond Roger de stijl al goed en had hij aangegeven welk lettertype en toetsen hij dan het beste zou vinden. Daar ga ik dan dus wat dingen op veranderen. Ook vond hij de styling al goed, maar ik denk dat ik nog wel wat puntjes op de i zou kunnen zetten om het nog net iets meer te verbeteren.
@@ -339,10 +339,20 @@ https://www.youtube.com/watch?v=miLY0Y9yUa8
 #### Vragen voor Roger
 - Lijkt het je een leuk idee om soundeffecten toe te voegen om jou identiteit erin te verwerken
 - Wat lijken je andere mogelijkheden om identiteit erin te verwerken.
+- Heeft u nog laatste opmerkingen of aanmerkingen?
 
 #### Testen met Roger
 
 ##### Anders Tests
-
+- Geluidjes is altijd moeilijk opletten, viel niet op
+- Geluidjes kan een aanvulling zijn, zolang het maar geen poppenkast wordt, niet te veel
+- Schuingedrukt is lastig te lezen
+- Spelen met wat de screenreader zegt kan leuk zijn
 
 ##### Mijn test
+- Systeem werkt goed en duidelijk
+- Niet een probleem als er geen filter systeem in zit, want het is duidelijk bij welke alinea de annotatie hoort
+- Soundeffect vond Roger leuk, mag meer, maar niet te veel. Moet wel functie hebben. Niet random soundeffect toevoegen
+- Geen extra identiteit nodig, website moet niet te druk worden
+- Het moet nog duidelijk worden op welke alinea nu gefocust is, de standard focus styling is niet duidelijk genoeg.
+- Als je een annotatie begint te maken, zit je vast. Misschien een stop of annuleer functie
