@@ -356,3 +356,8 @@ https://www.youtube.com/watch?v=miLY0Y9yUa8
 - Geen extra identiteit nodig, website moet niet te druk worden
 - Het moet nog duidelijk worden op welke alinea nu gefocust is, de standard focus styling is niet duidelijk genoeg.
 - Als je een annotatie begint te maken, zit je vast. Misschien een stop of annuleer functie
+
+### Weekverslag
+Deze week ben ik vooral bezig geweest met de laatste puntjes op de I, zo heb ik duidelijker gemaakt op welk gedeelte je focus hebt. De tekst of de annotaties. Dit viel namelijk op bij een test van iemand anders. Tijdens mijn eigen test vond Roger dit ook heel veel fijn, alleen was het binnen het tekst gedeelte nog lastig om te zien op welke alinea er dan focus is, dus dat kan ik nog aanpassen. Voor de rest wilde ik ook nog wat identiteit toevoegen aan de website. Dit had ik gedaan door een speciaal soundeffect toe te voegen zodra je een annotatie maakt. Roger is namelijk beeldhouwer, dus had ik een tikkende hammer gebruikt. Roger vond dit een leuk idee, en er mogen er ook wel meer in, maar ze moeten wel nut houden. Niet te veel en niet random dus. 
+
+Ook was ik deze week bezig met wat kleine dingetjes oplossen, zoals dat de annotaties niet gelijk stonden aan de alinea's of dat screenreader en toetsenbord niet goed werkte. Dat werkt nu allemaal een stuk beter.
