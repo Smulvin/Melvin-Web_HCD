@@ -363,4 +363,4 @@ Deze week ben ik vooral bezig geweest met de laatste puntjes op de I, zo heb ik 
 Ook was ik deze week bezig met wat kleine dingetjes oplossen, zoals dat de annotaties niet gelijk stonden aan de alinea's of dat screenreader en toetsenbord niet goed werkte. Dat werkt nu allemaal een stuk beter.
 
 ### Voortgangsgesprek
-
+Tijdens het voortgangsgesprek had ik verteld over waar ik nog aan wil werken voor het einde van de opdracht, dit was vooral het erzorgen dat de focus duidelijker is en nog een paar extra soundeffects. Toevallig had Romy een goed duidelijke manier voor focus, daar kan ik wat inspiratie uit halen.
