@@ -9,7 +9,6 @@ let mode = "text";
 let annotationItems = [];
 let activeAnnotationIndex = -1;
 
-// 🔥 NEW: controls auto-focus behavior when entering annotation mode
 let focusOnEnterAnnotations = true;
 
 // Give each paragraph a stable ID
@@ -220,11 +219,25 @@ function renderAnnotations() {
             saveAnnotations();
             renderAnnotations();
             announce("Annotatie verwijderd");
+
+            // Source: https://www.youtube.com/watch?v=H9viOVIllnA
+            const deleteSound = new Audio("Assets/SFX/delete.mp3");
+
+            deleteSound.currentTime = 0;
+            deleteSound.volume = 0.2;
+            deleteSound.play();
         });
 
         clone.querySelector(".edit-btn").addEventListener("click", (e) => {
             e.stopPropagation();
             openAnnotationForParagraph(p, id, item);
+
+            // Source: https://www.youtube.com/shorts/im8whXk8Rs8
+            const editSound = new Audio("Assets/SFX/edit.mp3");
+
+            editSound.currentTime = 0;
+            editSound.volume = 0.1;
+            editSound.play();
         });
 
         list.appendChild(clone);

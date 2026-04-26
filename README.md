@@ -364,3 +364,12 @@ Ook was ik deze week bezig met wat kleine dingetjes oplossen, zoals dat de annot
 
 ### Voortgangsgesprek
 Tijdens het voortgangsgesprek had ik verteld over waar ik nog aan wil werken voor het einde van de opdracht, dit was vooral het erzorgen dat de focus duidelijker is en nog een paar extra soundeffects. Toevallig had Romy een goed duidelijke manier voor focus, daar kan ik wat inspiratie uit halen.
+
+## Meivakantie
+In de vakantie heb ik nog een beetje doorgewerkt om het product nog iets beter te maken aan de hand van de laatste testresultaten. Eerst had ik de focus state iets beter en duidelijker gemaakt. Dit had Roger namelijk expliciet gezegd dat het niet duidelijk was. Toevallig had Romy bij het voortgangsgesprek en hele duidelijke focus. Dus die had ik een beetje nagemaakt, een duidelijk groene uitlijn met een beetje offset. Ook had ik nog op advies van Vasilis er ook voor gezorgd dat de focus altijd in het midden van het scherm ligt. Website is hierdoor meteen een stuk duidelijker. Ook wilde ik nog wat extra soundeffects toevoegen, Roger vond dit namelijk leuk. Maar het moesten niet te veel soundeffects worden. Dus heb ik ze alleen op buttons gezet, zodat het altijd vanuit input van de gebruiker gebeurt.
+
+### Bronnen
+https://www.youtube.com/watch?v=H9viOVIllnA <br>
+https://www.youtube.com/shorts/im8whXk8Rs8
+
+<img src="Assets/README_imgs/Iteratie4_DuidelijkeFocus.png">

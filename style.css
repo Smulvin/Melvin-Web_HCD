@@ -163,3 +163,8 @@ button {
     border-radius: 8px;
     background: var(--focus-grey);
 }
+
+*:focus {
+  outline: 10px solid lime;
+  outline-offset: 5px;
+}
