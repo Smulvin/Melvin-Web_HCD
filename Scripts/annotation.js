@@ -236,7 +236,7 @@ function renderAnnotations() {
             const editSound = new Audio("Assets/SFX/Edit.mp3");
 
             editSound.currentTime = 0;
-            editSound.volume = 0.1;
+            editSound.volume = 0.2;
             editSound.play();
         });
 
