@@ -221,7 +221,7 @@ function renderAnnotations() {
             announce("Annotatie verwijderd");
 
             // Source: https://www.youtube.com/watch?v=H9viOVIllnA
-            const deleteSound = new Audio("../Assets/SFX/delete.mp3");
+            const deleteSound = new Audio("Assets/SFX/Delete.mp3");
 
             deleteSound.currentTime = 0;
             deleteSound.volume = 0.2;
@@ -233,7 +233,7 @@ function renderAnnotations() {
             openAnnotationForParagraph(p, id, item);
 
             // Source: https://www.youtube.com/shorts/im8whXk8Rs8
-            const editSound = new Audio("../Assets/SFX/edit.mp3");
+            const editSound = new Audio("Assets/SFX/Edit.mp3");
 
             editSound.currentTime = 0;
             editSound.volume = 0.1;
@@ -299,7 +299,7 @@ function openAnnotationForParagraph(p, editId = null, existingItem = null) {
     saveBtn.addEventListener("click", () => {
         const text = textarea.value.trim();
 
-        const saveSound = new Audio("../Assets/SFX/hammer.mp3");
+        const saveSound = new Audio("Assets/SFX/Hammer.mp3");
 
         announce("Annotatie opgeslagen");
         saveSound.currentTime = 0;
@@ -372,7 +372,7 @@ document.addEventListener("keydown", (e) => {
 
         if (!target) return;
 
-        focusOnEnterAnnotations = false;
+        focusOnEnterAnnotations = false; 
 
         openAnnotationForParagraph(target);
     }
