@@ -372,4 +372,56 @@ In de vakantie heb ik nog een beetje doorgewerkt om het product nog iets beter t
 https://www.youtube.com/watch?v=H9viOVIllnA <br>
 https://www.youtube.com/shorts/im8whXk8Rs8
 
-<img src="Assets/README_imgs/Iteratie4_DuidelijkeFocus.png">
+<img src="Assets/README_imgs/Iteratie4_DuidelijkeFocus.png" alt="Duidelijke groene outline als focus voor wat focus heeft, altijd in midden van scherm">
+
+## Week 5
+
+### Reflectie
+Ik vond het een interessant vak om aan te werken. Het was leuk om eens echt veel te testen met dezelfde persoon omdat je het echt maar voor 1 iemand specifiek maakt. Hierdoor maakt de algemene nette styling ook minder uit want je maakt het zoals Roger in dit geval het wilt hebben. Ik vond het leuk om meerdere keren te testen omdat je dan echt merkt dat je met elke test meer in de buurt komt van de visie van Roger. Het was leuk dat je nog steeds gewoon rare ideeën kon proberen en dan maar kijken of je er iets aan gaat hebben, dit werkte uiteraard niet altijd. Want ik had in eerste instantie het idee om mijn blinde vlek idee weg te doen en opnieuw te beginnen. Maar later bleek dat het zebra patroon toch wel goed werkte, en dat het leuker was om gewoon die blinde vlek wel in de website te houden.
+
+Ik denk niet dat dit iets is wat ik later nog iets mee zal gaan doen. Ik heb geprobeerd zoveel mogelijk het naar de wens van Roger te maken, maar ik vindt het leuker om meer mijn eigen identiteit in de vorm van easter eggs toe te voegen aan projecten. Ik had bij dit project het gevoel dat ik dat minder kon doen omdat het niet een website voor mij was. Ik ben nog steeds wel tevreden over mijn opdracht, maar ik kan het wel nog verder verbeteren als het goed om een duidelijkere styling en meer naar wens van Roger maken.
+
+### Exclusive Design Principles
+Voor het correct maken van een website die exclusief voor iemand bedoeld is, heb ik gebruik gemaakt van de design principles van Vasilis. Door die verschillene principes te gebruiken kan je een zo goed mogelijke website maken voor een specifiek persoon. In mijn geval was dat Roger Ravelli, een man met maculadegeneratie.
+
+#### Study Situation
+Dit principe ging al redelijk vanzelf, dit was namelijk een onderdeel van de opdracht, meerdere keren testen met de testpersoon. Gedurende dit vak heb ik 4x met Roger getest. De eerste keer was dit alleen een kwestie van iets laten zien, alle andere keren had ik al meer interactie in mijn ontwerp zitten zodat hij het zelf meer kon testen. Uit deze testen heb ik veel verschillende bevindingen gedaan, maar nog bijna meer van andere mensen die aan het testen waren. Omdat we gezamelijk met een groep gingen testen kon ik ook veel oppakken van andere mensen, zoals een correct kleurenschema of knoppen die Roger graag gebruikt. Dit was allemaal heel handig en fijn. Door meerdere keren te testen merkte ik al snel dat mijn product steeds meer naar zijn wens ging. Ik ben er niet van overtuigd dat mijn ontwerp nu perfect is, als project langer zou duren en ik meer kon testen had ik waarschijnlijk nog meer naar zijn wens kunnen maken.
+
+#### Ignore Conventions
+Deze ging voor mij een beetje vanzelf. Tijdens het desigen van mijn prototype heb ik eigenlijk niet gedacht aan styling om het netjes te maken volgens de standaard conventies. Alles waar ik styling voor had gebruikt was altijd vanuit het idee dat het beter zou zijn voor Roger. Zo had ik normaal gesproken nooit een zebra patroon voor mijn tekst gebruikt of dit kleurenschema gebruikt. Dat was omdat Roger het kleurenschema van geel op donker fijn vond en dat het zebrapatroon het makkelijker leesbaar zou maken. Ik vond het wel fijn om niet over de standaard conventies te hoeven nadenken, dat gaf namelijk meer focus op andere dingen die belangrijker waren. Plus het blijkt ook vaak dat de standaard conventies niet goed werken voor mensen met een beperking.
+
+#### Prioritise Identity
+Voor dit principe had ik wel nog meer willen doen. Om de identiteit van Roger in mijn prototype te verwerken had ik eerst wat onderzoek gedaan. Ik kwam erachter dat hij een beeldhouwer is. Daarom had ik een soundeffect toegevoegd van een hamer zodra je een annotatie opslaat. Dit had ik getest met Roger en die vond het een leuk idee. Hij vond het leuk als er meerdere soundeffects in het product zouden komen, zolang ze maar wel een functie behouden en niet gewoon random klinken. Daarom heb ik er daarna nog 2 extra toegevoegd. Eentje van een boor zodra je een annotatie gaat bewerken en een algemeen afval geluid zodra je annotatie verwijderd. Ik had wel nog meer identiteit willen toevoegen als ik meer tijd had om aan het vak te werken.
+
+#### Add Nonsense
+Dit is het eerste prirncipe waar ik echt aan heb gewerkt. Er werd ons namelijk aangeraden om gewoon rare dingen te proberen, omdat er altijd wel iets in zit dat kan helpen. Zo had ik zelf het idee om de tekst om een cirkel heen te vormen. Aangezien Roger een blinde vlek in zijn zicht heeft, leek hem me logisch om de tekst er dan omheen te vormen. Uit testen bleek dat het nog steeds wel lastig was om te lezen, maar Roger vond het wel een heel leuk idee. Uit het proberen van rare techniek ben ik wel op het zebrapatroon gekomen. Ook al zei Roger dat hij misschien niet zo snel zou gebruiken, wilde hij wel graag dat ik deze functionaliteit erin moest houden. Het werkte dus wel echt om gewoon een raar idee uit te werken, zodat er nieuwe ideeën en oplossingen kunnen ontstaan.
+
+### Iteraties
+Voor mijn eerste versie had ik nog niet gekeken naar het maken van annotaties. Voor mijn eerste versie voordat we gingen testen had ik alleen het gedeelte gemaakt waarin de tekst om een blinde vlek vervormd wordt.
+
+#### Iteratie 1
+Voor mijn eerste iteratie had ik meer focus gelegd op leesbaarheid, want Roger had gezegd dat hij het een leuk idee vond, maar nog steeds snel vermoeiend. Dus had ik een kleurenschema toegevoegdg die hij fijn vond, de tekst dikgedrukt gemaakt en de lijnhoogte aangepast. Ook had ik deze week wat meer focus gelegd op leesbaarheid met screenreader, aangezien Roger die wel echt nog nodig heeft. Dus had ik meer focus gelegd op dat een screenreader de tekst nog steeds goed kan lezen aangezien het nu allemaal losse span elementen zijn.
+
+#### Iteratie 2
+Deze iteratie was ik vooral bezig met toegankelijkheid zodat Roger makkelijker mijn website kan gebruiken. Zo heb ik gekeken naar tab volgorde en hoe ik de taal kan aanpassen zodat een andere stem Engelse teksten goed voorleest. Ik heb ervoor gezorgd dat je makkelijk met Tab door de website heen kan gaan en annotaties kan maken
+
+#### Iteraite 3
+Deze week heb ik meer focus gelegd op focus. Roger had het er namelijk over dat het soms niet duidelijk is waar de focus ligt. Hierom had ik het duidelijker gemaakt waar de focus ligt qua tekst en annotaties. Voor de rest had ik ook de knoppen aangepast waarmee je annotaties maakt en kan bekijken, dit kwam uit de test van iemand anders namelijk.
+
+#### Iteratie 4
+Na de laatste test hadden we niet veel tijd meer om aan dingen aan te passen aan de hand van de laatste test. Wat ik wel nog heb aangepast is dat Roger specifiek had gezegd dat het wel duidelijk was waar de focus lag qua tekst of annotaties, maar niet precies welk onderdeel daarbinnen. Ik had dus nog aangepast dat de focus altijd in het midden van scherm komt en dat er in plaats van een dun wit lijntje, nu een dikke neon groene lijn omheen komt. Daarbij had Roger ook gezegd dat het soundeffect dat ik had toegevoegd leuk was, dus heb ik er daarna nog 2 toegevoegd.
+
+### Complete bronnenlijst
+<strong>Weekly Geeks</strong><br>
+- https://exclusive-design.vasilis.nl/
+- https://exclusive-design.vasilis.nl/flipping-things/
+- https://tetralogical.com/blog/2025/08/08/accessibility-and-the-agentic-web/
+
+<strong>SFX</strong>
+- https://www.youtube.com/watch?v=miLY0Y9yUa8
+- https://www.youtube.com/watch?v=H9viOVIllnA
+- https://www.youtube.com/shorts/im8whXk8Rs8
+
+<strong>Overig</strong>
+- Tekst: https://classics.mit.edu/Plato/republic.1.introduction.html
+- ChatGPT op verschillende momenten
