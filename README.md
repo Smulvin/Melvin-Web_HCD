@@ -399,17 +399,27 @@ Dit is het eerste prirncipe waar ik echt aan heb gewerkt. Er werd ons namelijk a
 ### Iteraties
 Voor mijn eerste versie had ik nog niet gekeken naar het maken van annotaties. Voor mijn eerste versie voordat we gingen testen had ik alleen het gedeelte gemaakt waarin de tekst om een blinde vlek vervormd wordt.
 
+<img src="Assets/README_imgs/Dag1_Voortgang.png" alt="">
+
 #### Iteratie 1
 Voor mijn eerste iteratie had ik meer focus gelegd op leesbaarheid, want Roger had gezegd dat hij het een leuk idee vond, maar nog steeds snel vermoeiend. Dus had ik een kleurenschema toegevoegdg die hij fijn vond, de tekst dikgedrukt gemaakt en de lijnhoogte aangepast. Ook had ik deze week wat meer focus gelegd op leesbaarheid met screenreader, aangezien Roger die wel echt nog nodig heeft. Dus had ik meer focus gelegd op dat een screenreader de tekst nog steeds goed kan lezen aangezien het nu allemaal losse span elementen zijn.
 
+<img src="Assets/README_imgs/Iteratie1_Zebra+LichtereGrijs+Lijnhoogte.png" alt="">
+
 #### Iteratie 2
-Deze iteratie was ik vooral bezig met toegankelijkheid zodat Roger makkelijker mijn website kan gebruiken. Zo heb ik gekeken naar tab volgorde en hoe ik de taal kan aanpassen zodat een andere stem Engelse teksten goed voorleest. Ik heb ervoor gezorgd dat je makkelijk met Tab door de website heen kan gaan en annotaties kan maken
+Deze iteratie was ik vooral bezig met toegankelijkheid zodat Roger makkelijker mijn website kan gebruiken. Zo heb ik gekeken naar tab volgorde en hoe ik de taal kan aanpassen zodat een andere stem Engelse teksten goed voorleest. Ik heb ervoor gezorgd dat je makkelijk met Tab door de website heen kan gaan en annotaties kan maken.
+
+<img src="Assets/README_imgs/Iteratie2_Annotaties.png" alt="">
 
 #### Iteraite 3
 Deze week heb ik meer focus gelegd op focus. Roger had het er namelijk over dat het soms niet duidelijk is waar de focus ligt. Hierom had ik het duidelijker gemaakt waar de focus ligt qua tekst en annotaties. Voor de rest had ik ook de knoppen aangepast waarmee je annotaties maakt en kan bekijken, dit kwam uit de test van iemand anders namelijk.
 
+<img src="Assets/README_imgs/Iteratie3_Styling.png" alt="">
+
 #### Iteratie 4
 Na de laatste test hadden we niet veel tijd meer om aan dingen aan te passen aan de hand van de laatste test. Wat ik wel nog heb aangepast is dat Roger specifiek had gezegd dat het wel duidelijk was waar de focus lag qua tekst of annotaties, maar niet precies welk onderdeel daarbinnen. Ik had dus nog aangepast dat de focus altijd in het midden van scherm komt en dat er in plaats van een dun wit lijntje, nu een dikke neon groene lijn omheen komt. Daarbij had Roger ook gezegd dat het soundeffect dat ik had toegevoegd leuk was, dus heb ik er daarna nog 2 toegevoegd.
+
+<img src="Assets/README_imgs/Iteratie4_DuidelijkeFocus.png" alt="">
 
 ### Complete bronnenlijst
 <strong>Weekly Geeks</strong><br>
