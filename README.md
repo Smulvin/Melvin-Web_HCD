@@ -421,7 +421,7 @@ Na de laatste test hadden we niet veel tijd meer om aan dingen aan te passen aan
 
 <img src="Assets/README_imgs/Iteratie4_DuidelijkeFocus.png" alt="">
 
-### Complete bronnenlijst
+## Complete bronnenlijst
 <strong>Weekly Geeks</strong><br>
 - https://exclusive-design.vasilis.nl/
 - https://exclusive-design.vasilis.nl/flipping-things/

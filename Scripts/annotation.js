@@ -299,6 +299,7 @@ function openAnnotationForParagraph(p, editId = null, existingItem = null) {
     saveBtn.addEventListener("click", () => {
         const text = textarea.value.trim();
 
+        // Source: https://www.youtube.com/watch?v=miLY0Y9yUa8
         const saveSound = new Audio("Assets/SFX/Hammer.mp3");
 
         announce("Annotatie opgeslagen");
