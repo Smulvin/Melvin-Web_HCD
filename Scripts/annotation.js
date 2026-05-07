@@ -25,6 +25,7 @@ paragraphs.forEach((p, i) => {
 const annotations =
     JSON.parse(localStorage.getItem("annotations")) || {};
 
+// Saving to localStorage
 function saveAnnotations() {
     localStorage.setItem("annotations", JSON.stringify(annotations));
 }
@@ -33,6 +34,7 @@ function setCurrentParagraph(p) {
     currentParagraph = p;
 }
 
+// Screenreader announcement
 function announce(message) {
     requestAnimationFrame(() => {
         status.textContent = message;
@@ -138,6 +140,7 @@ function getAnnotationItems() {
     return Array.from(document.querySelectorAll(".annotation-item"));
 }
 
+// Focus annotation by index
 function focusAnnotation(index) {
     const items = getAnnotationItems();
     if (!items.length) return;
@@ -170,6 +173,7 @@ function getVisibleParagraph() {
     return closest;
 }
 
+// Get visual center Y of an element, accounting for multi-line paragraphs
 function getVisualCenterY(el) {
     const range = document.createRange();
     range.selectNodeContents(el);
@@ -184,9 +188,7 @@ function getVisualCenterY(el) {
     return (first.top + last.bottom) / 2 + window.scrollY;
 }
 
-// =====================
 // RENDER ANNOTATIONS
-// =====================
 function renderAnnotations() {
     const list = document.getElementById("anno-list");
     const template = document.getElementById("anno-item-template");
@@ -248,9 +250,7 @@ function renderAnnotations() {
 
 renderAnnotations();
 
-// =====================
 // OPEN ANNOTATION
-// =====================
 function openAnnotationForParagraph(p, editId = null, existingItem = null) {
     const h4 =
         p.previousElementSibling?.tagName === "H4"
@@ -331,9 +331,7 @@ function openAnnotationForParagraph(p, editId = null, existingItem = null) {
     });
 }
 
-// =====================
 // UI
-// =====================
 function updateTextColors() {
     textPanel.style.color =
         mode === "text" ? "var(--focus-grey)" : "red";
