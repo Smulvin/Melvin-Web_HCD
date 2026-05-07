@@ -179,7 +179,7 @@ Vandaag was ik begonnen met het maken van het annotatie menu. Dit probeerde ik e
 - Voorkeur voor typen
 - Wat heel irritant is als mensen zeggen dat het toegankelijk is, maar het niet helemaal niet is. Dat soms het wel aan de WCAG voldoet, maar nog steeds niet goed werkt voor een slechtziende
 - Met 1 oplossing kan je niet de hele doelgroep bereiken, wordt soms een beetje misbruikt. (Bijvoorbeeld Braille)
-- Lieveer een soort Word bestand waar hij aantekeningen in kan maken, ipv een website waar hij aantekeningen kan maken
+- Liever een soort Word bestand waar hij aantekeningen in kan maken, ipv een website waar hij aantekeningen kan maken
 - Lastig om sommige boeken te kunnen lezen, want niet alles heeft een braille of digitale versie.
 - Leest boeken op desktop en mobiel, maar maakt de aantekeningen altijd vanaf desktop. Want daar gaat het iets makkelijker.
 - Er is wel behoefte om het op mobiel te kunnen, maar er is nog geen makkelijke tool voor. Lastig om notities terug te vinden
