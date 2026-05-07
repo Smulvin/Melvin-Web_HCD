@@ -78,7 +78,7 @@ function setMode(nextMode) {
         requestAnimationFrame(() => {
             const items = getAnnotationItems();
 
-            // 🔥 NEW: skip auto-focus if coming from Alt+X
+            // skip auto-focus if coming from Alt+X
             if (!focusOnEnterAnnotations) {
                 focusOnEnterAnnotations = true; // reset for next time
                 return;
@@ -344,7 +344,7 @@ function isTypingInField(target) {
 
 // MODE TOGGLE
 document.addEventListener("keydown", (e) => {
-    if (isTypingInField(e.target)) return;
+    if (isTypingInField(e.target)) return; // Dont switch if typing
 
     if (e.altKey && e.key.toLowerCase() === "z") {
         e.preventDefault();
@@ -361,7 +361,7 @@ document.addEventListener("keydown", (e) => {
 
 // CREATE ANNOTATION
 document.addEventListener("keydown", (e) => {
-    if (isTypingInField(e.target)) return;
+    if (isTypingInField(e.target)) return; // Dont switch if typing
 
     if (e.altKey && e.key.toLowerCase() === "x") {
         e.preventDefault();
