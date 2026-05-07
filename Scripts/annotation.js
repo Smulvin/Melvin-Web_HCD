@@ -110,7 +110,7 @@ function setMode(nextMode) {
     updateTextColors();
 }
 
-// 🔥 Focus annotation belonging to paragraph
+// Focus annotation belonging to paragraph
 function focusAnnotationByParagraph(p) {
     if (!p) return false;
 
